@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    }
+
+    nav a {
+      color: #ccc !important;
+      margin-left: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff !important;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    .btn-custom {
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #00cc99;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .project-card {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      background: #2a2a2a;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark fixed-top bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#">Arambuuu</a>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="d-flex align-items-center" style="height:100vh;" id="home">
+    <div class="container text-center">
+      <h1 class="display-4">Hi, I'm <span style="color:#00ffcc;">Aram</span></h1>
+      <p class="lead">A creative developer blending design, code, and AI</p>
+      <a href="#projects" class="btn btn-custom mt-3">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container glass">
+      <h2>About Me</h2>
+      <p>I’m a multimedia and visual artist who loves turning ideas into beautiful web experiences using AI, design, and code. From Photoshop to web systems, I build visually impactful digital work.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="project-card">
+            <h5>SentroID</h5>
+            <p>Centralized digital ID platform for document and transaction management.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <h5>AI Photo Editor</h5>
+            <p>Web-based Photoshop-style AI editor with real-time filters and auto-enhance.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <h5>Creative Portfolio</h5>
+            <p>Dynamic web portfolio showcasing my graphic and layout designs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container glass text-center">
+      <h2>Let's Connect</h2>
+      <p>Open for collaboration, freelance, and creative projects. Message me anytime.</p>
+      <a href="mailto:your@email.com" class="btn btn-custom mt-2">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <small>&copy; 2025 Aram Piloto. Powered by AI & Code.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
