@@ -1,350 +1,832 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
-      color: #fff;
-      scroll-behavior: smooth;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arambuuu | Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
-    .glass {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-    }
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
 
-    nav a {
-      color: #ccc !important;
-      margin-left: 1rem;
-      transition: color 0.3s;
-      text-decoration: none;
-    }
+    <div class="proj-preview" id="projPreview">
+      <div class="proj-preview-inner" id="previewContent">✦</div>
+    </div>
 
-    nav a:hover {
-      color: #fff !important;
-    }
+    <!-- Loader -->
+    <div id="loader">
+      <div id="loader-text"><span>ARAMBUUU</span></div>
+      <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
+      <div id="loader-count">000</div>
+    </div>
 
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      padding: 4px;
-    }
-
-    .hamburger span {
-      width: 25px;
-      height: 3px;
-      background-color: #ccc;
-      margin: 3px 0;
-      transition: 0.3s;
-    }
-
-    .hamburger:hover span {
-      background-color: #fff;
-    }
-
-    .hamburger.active span:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .nav-links {
-      display: flex;
-    }
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
-      }
-
-      .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.95);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: right 0.3s ease;
-        z-index: 1000;
-      }
-
-      .nav-links.active {
-        right: 0;
-      }
-
-      .nav-links a {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-        text-align: center;
-      }
-
-      .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 2rem;
-        color: #ccc;
-        cursor: pointer;
-        display: block !important;
-      }
-    }
-
-    .close-btn {
-      display: none;
-    }
-
-    h1, h2 {
-      font-weight: 600;
-    }
-
-    .btn-custom {
-      background: #00ffcc;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
-
-    .btn-custom:hover {
-      background: #00cc99;
-    }
-
-    section {
-      padding: 80px 0;
-    }
-
-    .project-card {
-      background: #1e1e1e;
-      border: 1px solid #333;
-      border-radius: 12px;
-      padding: 1.5rem;
-      transition: 0.3s;
-    }
-
-    .project-card:hover {
-      background: #2a2a2a;
-      transform: translateY(-5px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #999;
-    }
-
-    .typewriter {
-      overflow: hidden;
-      border-right: 2px solid #00ffcc;
-      white-space: nowrap;
-      animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: #00ffcc }
-    }
-
-    .gradient-text {
-      background: linear-gradient(45deg, #00ffcc, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, #dda0dd, #00ffcc);
-      background-size: 400% 400%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: gradientMove 3s ease infinite;
-    }
-
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s ease-in-out forwards;
-    }
-
-    @keyframes fadeIn {
-      from { 
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to { 
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .fade-in-button {
-      opacity: 0;
-      animation: fadeInButton 1.5s ease-in-out 2.5s forwards;
-    }
-
-    @keyframes fadeInButton {
-      from { 
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-      }
-      to { 
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    }
-
-    .btn-custom {
-      background: #00ffcc;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: all 0.3s ease;
-      transform: translateY(0);
-    }
-
-    .btn-custom:hover {
-      background: #00cc99;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 255, 204, 0.3);
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-dark fixed-top bg-transparent">
-    <div class="container">
-      <a class="navbar-brand" href="#">Arambuuu</a>
-      <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Nav -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+        <img
+          src="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png"
+          alt="Arambuuu Logo"
+        />
+        <span>ARAMBUUU.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-status">
+        <div class="nav-dot"></div>
+        Available for work
       </div>
-      <div class="nav-links" id="navLinks">
-        <span class="close-btn" onclick="toggleMenu()">&times;</span>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-bg-text">PORTFOLIO</div>
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span>Multimedia Artist · Front-End Developer · Visual Creator</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span>Crafting</span></span>
+        <span class="line"
+          ><span><em>Digital</em></span></span
+        >
+        <span class="line"><span>Experiences.</span></span>
+      </h1>
+      <div class="hero-badges">
+        <span class="hero-badge">Vue · React · Laravel</span>
+        <span class="hero-badge">Figma · Adobe CC</span>
+        <span class="hero-badge">Branding & UI/UX</span>
+        <span class="hero-badge">PH Based</span>
+      </div>
+      <div class="hero-bottom">
+        <p class="hero-desc">
+          <span
+            >Multimedia & Front-End Developer blending graphic design, UI/UX,
+            and web development to build responsive, visually engaging digital
+            products.</span
+          >
+        </p>
+        <a href="#work" class="hero-cta">
+          <span>View Work</span>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <div class="marquee-item">UI/UX Design <span>✦</span></div>
+        <div class="marquee-item">Web Development <span>✦</span></div>
+        <div class="marquee-item">Visual Identity <span>✦</span></div>
+        <div class="marquee-item">Motion Design <span>✦</span></div>
+        <div class="marquee-item">Graphic Design <span>✦</span></div>
+        <div class="marquee-item">Brand Strategy <span>✦</span></div>
+        <div class="marquee-item">Photography <span>✦</span></div>
+        <div class="marquee-item">Videography <span>✦</span></div>
+        <div class="marquee-item">UI/UX Design <span>✦</span></div>
+        <div class="marquee-item">Web Development <span>✦</span></div>
+        <div class="marquee-item">Visual Identity <span>✦</span></div>
+        <div class="marquee-item">Motion Design <span>✦</span></div>
+        <div class="marquee-item">Graphic Design <span>✦</span></div>
+        <div class="marquee-item">Brand Strategy <span>✦</span></div>
+        <div class="marquee-item">Photography <span>✦</span></div>
+        <div class="marquee-item">Videography <span>✦</span></div>
       </div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="d-flex align-items-center" style="height:100vh;" id="home">
-    <div class="container text-center">
-      <h1 class="display-4 gradient-text fade-in">Hi, I'm <span class="gradient-text">Aram</span></h1>
-      <p class="lead typewriter">A creative developer blending design, code, and AI</p>
-      <a href="#projects" class="btn btn-custom mt-3 fade-in-button">View My Work</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container glass">
-      <h2>About Me</h2>
-      <p>I’m a multimedia and visual artist who loves turning ideas into beautiful web experiences using AI, design, and code. From Photoshop to web systems, I build visually impactful digital work.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="project-card">
-            <h5>SentroID</h5>
-            <p>Centralized digital ID platform for document and transaction management.</p>
+    <!-- About -->
+    <section id="about">
+      <div>
+        <div class="s-label reveal">
+          <span class="s-num">01 &nbsp;</span> About Me
+        </div>
+        <h2 class="s-title reveal">
+          Designer who<br /><em>thinks in code</em>,<br />codes in design.
+        </h2>
+        <p class="about-text reveal">
+          Hi, I'm <strong style="color: #fff">Ra Ashni Aram D. Piloto</strong> —
+          a multidisciplinary creative based in Davao del Norte, Philippines. I
+          specialize in crafting interfaces that are both visually compelling
+          and technically robust.
+        </p>
+        <p class="about-text reveal">
+          My work lives at the intersection of design and development — from
+          branding and print to responsive web apps built with Vue, React, and
+          Laravel. I've been designing and building since 2017 across freelance
+          and professional settings.
+        </p>
+        <div class="about-stats reveal">
+          <div>
+            <div class="stat-num">
+              8<span
+                style="
+                  background: inherit;
+                  -webkit-background-clip: inherit;
+                  -webkit-text-fill-color: inherit;
+                "
+                >+</span
+              >
+            </div>
+            <div class="stat-label">Years Active</div>
+          </div>
+          <div>
+            <div class="stat-num">
+              20<span
+                style="
+                  background: inherit;
+                  -webkit-background-clip: inherit;
+                  -webkit-text-fill-color: inherit;
+                "
+                >+</span
+              >
+            </div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div>
+            <div class="stat-num">
+              10<span
+                style="
+                  background: inherit;
+                  -webkit-background-clip: inherit;
+                  -webkit-text-fill-color: inherit;
+                "
+                >+</span
+              >
+            </div>
+            <div class="stat-label">Happy Clients</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <h5>AI Photo Editor</h5>
-            <p>Web-based Photoshop-style AI editor with real-time filters and auto-enhance.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <h5>Creative Portfolio</h5>
-            <p>Dynamic web portfolio showcasing my graphic and layout designs.</p>
+        <div class="tools-strip reveal">
+          <div class="tools-label">Tools & Technologies</div>
+          <div class="tools-list">
+            <span class="tool-chip">Vue</span>
+            <span class="tool-chip">React</span>
+            <span class="tool-chip">Laravel</span>
+            <span class="tool-chip">Quasar</span>
+            <span class="tool-chip">Tailwind CSS</span>
+            <span class="tool-chip">Figma</span>
+            <span class="tool-chip">Photoshop</span>
+            <span class="tool-chip">Illustrator</span>
+            <span class="tool-chip">Premiere Pro</span>
+            <span class="tool-chip">After Effects</span>
+            <span class="tool-chip">InDesign</span>
+            <span class="tool-chip">CorelDRAW</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="about-img-wrap reveal-l">
+        <div class="about-img-box">
+          <div class="about-img-placeholder">✦</div>
+        </div>
+        <div class="about-tag">Arambuuu</div>
+        <div class="about-tag-2">PH — Based</div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container glass text-center">
-      <h2>Let's Connect</h2>
-      <p>Open for collaboration, freelance, and creative projects. Message me anytime.</p>
-      <a href="mailto:your@email.com" class="btn btn-custom mt-2">Email Me</a>
-    </div>
-  </section>
+    <!-- Experience -->
+    <section id="experience">
+      <div class="s-label reveal">
+        <span class="s-num">02 &nbsp;</span> Work Experience
+      </div>
+      <h2 class="s-title reveal">Where I've<br /><em>Made Impact</em></h2>
+      <div class="exp-grid">
+        <!-- Job 1 -->
+        <div class="exp-card reveal">
+          <div class="exp-period">July 2025 – May 2026</div>
+          <div class="exp-role">Front-end Web Developer</div>
+          <div class="exp-company">Bridge Digital Transformations Inc.</div>
+          <ul class="exp-list">
+            <li>
+              Developed and maintained responsive business websites using
+              Laravel, Vue, Quasar, React, and Tailwind CSS
+            </li>
+            <li>
+              Built user-friendly interfaces and optimized layouts for desktop
+              and mobile
+            </li>
+            <li>
+              Managed website content through CMS platforms per business
+              requirements
+            </li>
+            <li>
+              Designed digital marketing materials and social media graphics for
+              campaigns
+            </li>
+            <li>
+              Improved UI consistency, visual presentation, and overall user
+              experience
+            </li>
+          </ul>
+          <div class="exp-tools">
+            <span class="exp-tool">Vue</span>
+            <span class="exp-tool">Quasar</span>
+            <span class="exp-tool">React</span>
+            <span class="exp-tool">Laravel</span>
+            <span class="exp-tool">Tailwind</span>
+            <span class="exp-tool">Figma</span>
+          </div>
+        </div>
+        <!-- Job 2 -->
+        <div class="exp-card reveal">
+          <div class="exp-period">2017 – Present</div>
+          <div class="exp-role">Freelancer — Multimedia & Visual Artist</div>
+          <div class="exp-company">Self-Employed</div>
+          <ul class="exp-list">
+            <li>
+              Designed branding materials: logos, brochures, posters,
+              tarpaulins, and social media graphics
+            </li>
+            <li>
+              Developed responsive websites and landing pages using HTML, CSS,
+              JS, Vue, React, and Laravel
+            </li>
+            <li>
+              Created UI/UX prototypes and layouts using Figma, Wix, Webflow,
+              and SquareSpace
+            </li>
+            <li>
+              Edited promotional videos using Premiere Pro, After Effects,
+              CapCut, and Filmora
+            </li>
+            <li>
+              Managed digital content and social media assets for online
+              business pages
+            </li>
+          </ul>
+          <div class="exp-tools">
+            <span class="exp-tool">Photoshop</span>
+            <span class="exp-tool">Illustrator</span>
+            <span class="exp-tool">Premiere Pro</span>
+            <span class="exp-tool">After Effects</span>
+            <span class="exp-tool">CorelDRAW</span>
+            <span class="exp-tool">Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <small>&copy; 2025 Aram Piloto. Powered by AI & Code.</small>
-  </footer>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="skills-hdr">
+        <div>
+          <div class="s-label">
+            <span class="s-num">03 &nbsp;</span> Expertise
+          </div>
+          <h2 class="s-title" style="margin-bottom: 0">
+            What I <em>Do Best</em>
+          </h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">◈</span>
+          <div class="skill-name">UI/UX Design</div>
+          <div class="skill-desc">
+            Designing interfaces that balance beauty and usability — Figma,
+            wireframes, prototypes, and full design systems.
+          </div>
+          <div class="skill-level">
+            <div class="skill-bar-bg">
+              <div class="skill-bar" data-level="0.92"></div>
+            </div>
+            <div class="skill-pct">92%</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⟐</span>
+          <div class="skill-name">Front-End Development</div>
+          <div class="skill-desc">
+            Building fast, responsive experiences with Vue, React, Quasar,
+            Laravel, and Tailwind CSS.
+          </div>
+          <div class="skill-level">
+            <div class="skill-bar-bg">
+              <div class="skill-bar" data-level="0.88"></div>
+            </div>
+            <div class="skill-pct">88%</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">✳</span>
+          <div class="skill-name">Graphic Design</div>
+          <div class="skill-desc">
+            Creating visual systems, logos, branding, print and digital assets
+            with Photoshop, Illustrator, and InDesign.
+          </div>
+          <div class="skill-level">
+            <div class="skill-bar-bg">
+              <div class="skill-bar" data-level="0.93"></div>
+            </div>
+            <div class="skill-pct">93%</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">◎</span>
+          <div class="skill-name">Motion & Video</div>
+          <div class="skill-desc">
+            Bringing content to life through promotional video edits and motion
+            graphics with Premiere Pro and After Effects.
+          </div>
+          <div class="skill-level">
+            <div class="skill-bar-bg">
+              <div class="skill-bar" data-level="0.78"></div>
+            </div>
+            <div class="skill-pct">78%</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⬡</span>
+          <div class="skill-name">Brand Identity</div>
+          <div class="skill-desc">
+            Developing visual identities — logos, brochures, tarpaulins, and
+            social media graphics that communicate values.
+          </div>
+          <div class="skill-level">
+            <div class="skill-bar-bg">
+              <div class="skill-bar" data-level="0.90"></div>
+            </div>
+            <div class="skill-pct">90%</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⋄</span>
+          <div class="skill-name">Photography & Content</div>
+          <div class="skill-desc">
+            Capturing and managing digital content, social media assets, and
+            photography for online business pages.
+          </div>
+          <div class="skill-level">
+            <div class="skill-bar-bg">
+              <div class="skill-bar" data-level="0.80"></div>
+            </div>
+            <div class="skill-pct">80%</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById('navLinks');
-      const hamburger = document.querySelector('.hamburger');
-      
-      navLinks.classList.toggle('active');
-      hamburger.classList.toggle('active');
-    }
+    <!-- Work -->
+    <section id="work">
+      <div class="work-hdr">
+        <div>
+          <div class="s-label">
+            <span class="s-num">04 &nbsp;</span> Selected Work
+          </div>
+          <h2 class="s-title" style="margin-bottom: 0">
+            Projects That<br /><em>Define Me</em>
+          </h2>
+        </div>
+        <a
+          href="https://arambuuu.my.canva.site/portfolio-arambuuu"
+          target="_blank"
+          class="all-link"
+        >
+          Full Portfolio
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </div>
+      <div class="proj-list">
+        <a href="#" class="proj-row" data-preview="◈" data-color="#FFE566">
+          <div class="proj-num">01</div>
+          <div>
+            <div class="proj-name">Branding & Identity Systems</div>
+            <div class="proj-sub">
+              Logos · Brochures · Tarpaulins · Social Media Graphics
+            </div>
+          </div>
+          <div class="proj-tags">
+            <div class="proj-tag">Branding</div>
+            <div class="proj-tag">Illustrator</div>
+            <div class="proj-tag">Print</div>
+          </div>
+          <div class="proj-arrow">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="proj-row" data-preview="⟐" data-color="#BB86FC">
+          <div class="proj-num">02</div>
+          <div>
+            <div class="proj-name">Responsive Web Applications</div>
+            <div class="proj-sub">
+              Front-End · Vue · React · Laravel · Tailwind CSS
+            </div>
+          </div>
+          <div class="proj-tags">
+            <div class="proj-tag">Web Dev</div>
+            <div class="proj-tag">Vue</div>
+            <div class="proj-tag">Laravel</div>
+          </div>
+          <div class="proj-arrow">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="proj-row" data-preview="✳" data-color="#4ADE80">
+          <div class="proj-num">03</div>
+          <div>
+            <div class="proj-name">UI/UX Prototypes & Layouts</div>
+            <div class="proj-sub">Figma · Wix · Webflow · SquareSpace</div>
+          </div>
+          <div class="proj-tags">
+            <div class="proj-tag">UI/UX</div>
+            <div class="proj-tag">Figma</div>
+          </div>
+          <div class="proj-arrow">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="proj-row" data-preview="◎" data-color="#FFBB33">
+          <div class="proj-num">04</div>
+          <div>
+            <div class="proj-name">Promotional Video & Motion</div>
+            <div class="proj-sub">
+              Adobe Premiere Pro · After Effects · CapCut · Filmora
+            </div>
+          </div>
+          <div class="proj-tags">
+            <div class="proj-tag">Motion</div>
+            <div class="proj-tag">Video</div>
+          </div>
+          <div class="proj-arrow">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="proj-row" data-preview="⬡" data-color="#8B47F0">
+          <div class="proj-num">05</div>
+          <div>
+            <div class="proj-name">Digital Marketing Assets</div>
+            <div class="proj-sub">
+              Social Media Content · Web Banners · Ad Creatives
+            </div>
+          </div>
+          <div class="proj-tags">
+            <div class="proj-tag">Digital</div>
+            <div class="proj-tag">Social</div>
+          </div>
+          <div class="proj-arrow">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
 
-    // Close menu when clicking on a link
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          const navLinks = document.getElementById('navLinks');
-          const hamburger = document.querySelector('.hamburger');
-          
-          navLinks.classList.remove('active');
-          hamburger.classList.remove('active');
+    <!-- Education -->
+    <section id="education">
+      <div class="s-label reveal">
+        <span class="s-num">05 &nbsp;</span> Education
+      </div>
+      <h2 class="s-title reveal">Academic<br /><em>Foundation</em></h2>
+      <div class="edu-card reveal">
+        <div class="edu-icon">◈</div>
+        <div>
+          <div class="edu-year">July 2021 – June 2025</div>
+          <div class="edu-degree">
+            Bachelor of Science in Information Technology
+          </div>
+          <div class="edu-school">Davao del Norte State College</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-bg">HELLO</div>
+      <div style="position: relative">
+        <div class="s-label reveal" style="justify-content: center">
+          <span class="s-num">06 &nbsp;</span> Get in Touch
+        </div>
+        <h2 class="contact-title reveal">
+          Let's Build<br /><em>Something</em><br />Great Together.
+        </h2>
+        <p class="contact-sub reveal">
+          Have a project in mind? A collaboration? Or just want to say hi? My
+          inbox is always open.
+        </p>
+        <a href="mailto:arampiloto@gmail.com" class="contact-email reveal"
+          >arampiloto@gmail.com</a
+        >
+        <div class="contact-socials reveal">
+          <a
+            href="https://linkedin.com/in/arambuuu"
+            target="_blank"
+            class="soc-link"
+            >LinkedIn</a
+          >
+          <div class="soc-sep"></div>
+          <a href="https://github.com/Arambuuu" target="_blank" class="soc-link"
+            >GitHub</a
+          >
+          <div class="soc-sep"></div>
+          <a
+            href="https://arambuuu.my.canva.site/portfolio-arambuuu"
+            target="_blank"
+            class="soc-link"
+            >Portfolio</a
+          >
+          <div class="soc-sep"></div>
+          <a href="tel:09917219541" class="soc-link">+63 991 721 9541</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span
+        >© 2026 Arambuuu · Ra Ashni Aram D. Piloto. All rights reserved.</span
+      >
+      <span>Designed & Built with ✦</span>
+      <a href="#hero">Back to top ↑</a>
+    </footer>
+
+    <script>
+      // Cursor
+      const cur = document.getElementById("cursor"),
+        ring = document.getElementById("cursor-ring");
+      let mx = 0,
+        my = 0,
+        rx = 0,
+        ry = 0;
+      document.addEventListener("mousemove", (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+      });
+      (function tick() {
+        cur.style.left = mx + "px";
+        cur.style.top = my + "px";
+        rx += (mx - rx) * 0.12;
+        ry += (my - ry) * 0.12;
+        ring.style.left = rx + "px";
+        ring.style.top = ry + "px";
+        requestAnimationFrame(tick);
+      })();
+
+      // Loader
+      const ltxt = document.querySelector("#loader-text span"),
+        lbar = document.getElementById("loader-bar"),
+        lcnt = document.getElementById("loader-count"),
+        ldr = document.getElementById("loader");
+      setTimeout(() => {
+        ltxt.style.transition = "transform .88s cubic-bezier(.4,0,.2,1)";
+        ltxt.style.transform = "translateY(0)";
+      }, 80);
+      let c = 0;
+      const iv = setInterval(() => {
+        c += ((Math.random() * 11) | 0) + 1;
+        if (c >= 100) {
+          c = 100;
+          clearInterval(iv);
+        }
+        lcnt.textContent = String(c).padStart(3, "0");
+        lbar.style.width = c + "%";
+      }, 55);
+      setTimeout(() => {
+        ldr.style.transition =
+          "opacity .75s ease,transform .75s cubic-bezier(.4,0,.2,1)";
+        ldr.style.opacity = "0";
+        ldr.style.transform = "translateY(-10px)";
+        setTimeout(() => {
+          ldr.style.display = "none";
+          heroIn();
+        }, 750);
+      }, 2100);
+
+      // Hero in
+      const hlines = document.querySelectorAll(".hero-title .line span"),
+        hbrow = document.querySelector(".hero-eyebrow span"),
+        hdesc = document.querySelector(".hero-desc span");
+      hlines.forEach((el) => (el.style.transform = "translateY(110%)"));
+      hbrow.style.cssText += "transform:translateY(20px);opacity:0;";
+      hdesc.style.cssText += "transform:translateY(20px);opacity:0;";
+      function heroIn() {
+        hbrow.style.transition =
+          "transform .7s cubic-bezier(.4,0,.2,1) .1s,opacity .7s ease .1s";
+        hbrow.style.transform = "translateY(0)";
+        hbrow.style.opacity = "1";
+        hlines.forEach((el, i) =>
+          setTimeout(
+            () => {
+              el.style.transition = "transform .9s cubic-bezier(.4,0,.2,1)";
+              el.style.transform = "translateY(0)";
+            },
+            190 + i * 130,
+          ),
+        );
+        setTimeout(() => {
+          hdesc.style.transition = "transform .8s ease,opacity .8s ease";
+          hdesc.style.transform = "translateY(0)";
+          hdesc.style.opacity = "1";
+        }, 680);
+      }
+
+      // Scroll reveal
+      const ro = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            const el = e.target,
+              sibs = el.parentElement.querySelectorAll(".reveal,.reveal-l");
+            const i = Array.from(sibs).indexOf(el);
+            setTimeout(() => el.classList.add("visible"), i * 110);
+            ro.unobserve(el);
+          });
+        },
+        { threshold: 0.12 },
+      );
+      document
+        .querySelectorAll(".reveal,.reveal-l")
+        .forEach((el) => ro.observe(el));
+
+      // Skill bars
+      const bo = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            e.target.querySelectorAll(".skill-bar").forEach((b, i) =>
+              setTimeout(
+                () => {
+                  b.style.transform = `scaleX(${b.dataset.level})`;
+                },
+                100 + i * 80,
+              ),
+            );
+            bo.unobserve(e.target);
+          });
+        },
+        { threshold: 0.25 },
+      );
+      document.querySelectorAll("#skills").forEach((el) => bo.observe(el));
+
+      // Project preview
+      const pprev = document.getElementById("projPreview"),
+        pcon = document.getElementById("previewContent");
+      document.querySelectorAll(".proj-row").forEach((row) => {
+        row.addEventListener("mouseenter", () => {
+          pcon.textContent = row.dataset.preview;
+          pcon.style.color = row.dataset.color;
+          pprev.style.boxShadow = `0 0 40px ${row.dataset.color}28`;
+          pprev.classList.add("visible");
+        });
+        row.addEventListener("mouseleave", () =>
+          pprev.classList.remove("visible"),
+        );
+        row.addEventListener("mousemove", (e) => {
+          pprev.style.left = e.clientX + 26 + "px";
+          pprev.style.top = e.clientY - 95 + "px";
         });
       });
-    });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-      const navLinks = document.getElementById('navLinks');
-      const hamburger = document.querySelector('.hamburger');
-      
-      if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
+      // Parallax
+      const hbg = document.querySelector(".hero-bg-text");
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (hbg)
+            hbg.style.transform = `translate(-50%,calc(-50% + ${scrollY * 0.14}px))`;
+        },
+        { passive: true },
+      );
+
+      // Navbar
+      const nav = document.getElementById("navbar");
+      window.addEventListener(
+        "scroll",
+        () => nav.classList.toggle("scrolled", scrollY > 60),
+        { passive: true },
+      );
+
+      // Counter
+      function countUp(el, target) {
+        let n = 0;
+        const t = setInterval(() => {
+          n = Math.min(n + target / 90, target);
+          el.textContent = Math.floor(n);
+          if (n >= target) clearInterval(t);
+        }, 16);
       }
-    });
-  </script>
-</body>
-</html>
+      const so = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            e.target.querySelectorAll(".stat-num").forEach((el) => {
+              const num = parseInt(el.textContent);
+              const suf = el.querySelector("span").outerHTML;
+              el.innerHTML = `0${suf}`;
+              countUp(el.firstChild, num);
+            });
+            so.unobserve(e.target);
+          });
+        },
+        { threshold: 0.5 },
+      );
+      const se = document.querySelector(".about-stats");
+      if (se) so.observe(se);
 
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((a) =>
+        a.addEventListener("click", (e) => {
+          const t = document.querySelector(a.getAttribute("href"));
+          if (t) {
+            e.preventDefault();
+            t.scrollIntoView({ behavior: "smooth" });
+          }
+        }),
+      );
+    </script>
+  </body>
+</html>
