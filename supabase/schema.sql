@@ -203,3 +203,58 @@ select * from (values
   ('Studio Portrait — Ra Ashni Aram Piloto', 'Photography', 'Editorial studio portrait from Davao del Norte creative practice.', 'https://ik.imagekit.io/arambuuu/Arambuuu/profile.png', '3/4', '2026', 'Photography · Lightroom', true, 2)
 ) as seed(title, category, caption, image_url, aspect_ratio, year, tool_used, published, sort_order)
 where not exists (select 1 from public.gallery_items limit 1);
+
+-- Seed initial admin user: arampiloto@gmail.com / 12345678
+do $$
+declare
+  admin_uid uuid := 'a0000000-0000-0000-0000-000000000001'::uuid;
+begin
+  if not exists (select 1 from auth.users where email = 'arampiloto@gmail.com') then
+    insert into auth.users (
+      instance_id,
+      id,
+      aud,
+      role,
+      email,
+      encrypted_password,
+      email_confirmed_at,
+      raw_app_meta_data,
+      raw_user_meta_data,
+      created_at,
+      updated_at
+    ) values (
+      '00000000-0000-0000-0000-000000000000',
+      admin_uid,
+      'authenticated',
+      'authenticated',
+      'arampiloto@gmail.com',
+      crypt('12345678', gen_salt('bf')),
+      now(),
+      '{"provider":"email","providers":["email"]}'::jsonb,
+      '{"name":"Ra Ashni Aram Piloto"}'::jsonb,
+      now(),
+      now()
+    );
+
+    insert into auth.identities (
+      id,
+      user_id,
+      identity_data,
+      provider,
+      provider_id,
+      last_sign_in_at,
+      created_at,
+      updated_at
+    ) values (
+      admin_uid,
+      admin_uid,
+      jsonb_build_object('sub', admin_uid::text, 'email', 'arampiloto@gmail.com'),
+      'email',
+      admin_uid::text,
+      now(),
+      now(),
+      now()
+    );
+  end if;
+end $$;
+

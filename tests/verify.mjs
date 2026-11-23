@@ -12,7 +12,7 @@ const sql = fs.readFileSync(path.join(root, "supabase", "schema.sql"), "utf8");
 const appJs = fs.readFileSync(path.join(root, "js", "app.js"), "utf8");
 
 // 1. Verify all 5 required pages + CMS view exist
-for (const pageId of ["page-home", "page-about", "page-projects", "page-tools", "page-contact", "page-admin"]) {
+for (const pageId of ["page-home", "page-about", "page-projects", "page-tools", "page-contact", "page-studio-manage"]) {
   assert.ok(html.includes(`id="${pageId}"`), `Missing section ${pageId}`);
 }
 for (const navLabel of ["Home", "About", "Projects", "My Tools", "Contact"]) {

@@ -41,7 +41,6 @@
             <span class="status-dot" aria-hidden="true"></span>
             <span>Available · PH</span>
           </div>
-          <a href="#admin" class="cms-nav-btn" data-route="admin">CMS</a>
           <button
             type="button"
             id="themeToggleBtn"
@@ -305,8 +304,8 @@
         </div>
       </section>
 
-      <!-- CMS / CONTENT MANAGER (#admin) -->
-      <section id="page-admin" class="page-view" aria-labelledby="adminHeading">
+      <!-- CMS / CONTENT MANAGER (Hidden / Owner Only) -->
+      <section id="page-studio-manage" class="page-view" aria-labelledby="adminHeading">
         <div class="cms-header">
           <div>
             <h1 id="adminHeading" class="page-title" style="margin-bottom: 4px">Content Manager (CMS)</h1>
@@ -318,12 +317,12 @@
           </div>
         </div>
 
-        <!-- Auth / Setup Gate -->
-        <div id="cmsAuthGate" class="cms-split">
+        <!-- Auth Gate (Clean Single Sign-In Panel) -->
+        <div id="cmsAuthGate" style="max-width: 480px; margin: 40px auto 0">
           <div class="panel">
             <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Owner Sign-In</h2>
             <p class="body-copy" style="margin-bottom: 18px">
-              Sign in with your Supabase Auth account to publish or edit Projects, Gallery artworks, and Inquiries. Row Level Security enforces write permissions server-side.
+              Sign in with your Supabase Auth account to manage Projects, Gallery artworks, and Inquiries.
             </p>
             <form id="cmsLoginForm" class="form-grid">
               <div class="field">
@@ -336,40 +335,7 @@
               </div>
               <div id="cmsLoginFeedback" aria-live="polite"></div>
               <div class="btn-row">
-                <button type="submit" id="cmsLoginSubmitBtn" class="btn btn-primary">Sign In to CMS</button>
-                <button type="button" id="cmsLocalPreviewBtn" class="btn btn-secondary">Use Local Preview Mode</button>
-              </div>
-            </form>
-          </div>
-
-          <div class="panel">
-            <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Supabase &amp; ImageKit Connection</h2>
-            <p class="body-copy" style="margin-bottom: 16px">
-              Connect your free-tier Supabase project URL and public Anon Key. Private ImageKit keys stay strictly in Vercel environment variables (<code class="mono-meta">/api/imagekit-auth</code>).
-            </p>
-            <form id="cmsQuickConfigForm" class="form-grid">
-              <div class="field">
-                <label for="cfgSupabaseUrl">Supabase Project URL</label>
-                <input type="url" id="cfgSupabaseUrl" placeholder="https://xyzcompany.supabase.co" />
-              </div>
-              <div class="field">
-                <label for="cfgSupabaseAnon">Supabase Anon Key</label>
-                <input type="text" id="cfgSupabaseAnon" placeholder="eyJhbGciOi..." />
-              </div>
-              <div class="form-row-2">
-                <div class="field">
-                  <label for="cfgImageKitEndpoint">ImageKit URL Endpoint</label>
-                  <input type="url" id="cfgImageKitEndpoint" placeholder="https://ik.imagekit.io/arambuuu" />
-                </div>
-                <div class="field">
-                  <label for="cfgImageKitFolder">Upload Folder</label>
-                  <input type="text" id="cfgImageKitFolder" placeholder="/Arambuuu/cms" />
-                </div>
-              </div>
-              <div id="cmsConfigFeedback" aria-live="polite"></div>
-              <div class="btn-row">
-                <button type="submit" class="btn btn-secondary">Save Connection</button>
-                <button type="button" id="cmsResetConfigBtn" class="btn btn-ghost">Reset</button>
+                <button type="submit" id="cmsLoginSubmitBtn" class="btn btn-primary" style="width: 100%">Sign In to CMS</button>
               </div>
             </form>
           </div>
@@ -587,9 +553,41 @@
           <!-- Tab: Connection & Export -->
           <div id="cmsTabSettings" class="cms-split" hidden>
             <div class="panel">
-              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Active Endpoints</h2>
+              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Supabase &amp; ImageKit Connection</h2>
+              <p class="body-copy" style="margin-bottom: 16px">
+                Connect your free-tier Supabase project URL and public Anon Key. Private ImageKit keys stay strictly in Vercel environment variables (<code class="mono-meta">/api/imagekit-auth</code>).
+              </p>
+              <form id="cmsQuickConfigForm" class="form-grid">
+                <div class="field">
+                  <label for="cfgSupabaseUrl">Supabase Project URL</label>
+                  <input type="url" id="cfgSupabaseUrl" placeholder="https://xyzcompany.supabase.co" />
+                </div>
+                <div class="field">
+                  <label for="cfgSupabaseAnon">Supabase Anon Key</label>
+                  <input type="text" id="cfgSupabaseAnon" placeholder="eyJhbGciOi..." />
+                </div>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="cfgImageKitEndpoint">ImageKit URL Endpoint</label>
+                    <input type="url" id="cfgImageKitEndpoint" placeholder="https://ik.imagekit.io/arambuuu" />
+                  </div>
+                  <div class="field">
+                    <label for="cfgImageKitFolder">Upload Folder</label>
+                    <input type="text" id="cfgImageKitFolder" placeholder="/Arambuuu/cms" />
+                  </div>
+                </div>
+                <div id="cmsConfigFeedback" aria-live="polite"></div>
+                <div class="btn-row">
+                  <button type="submit" class="btn btn-secondary">Save Connection</button>
+                  <button type="button" id="cmsResetConfigBtn" class="btn btn-ghost">Reset</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="panel">
+              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Active Endpoints &amp; Export</h2>
               <p class="body-copy" style="margin-bottom: 14px">
-                Updates apply immediately in this browser. To make them global for all visitors on Vercel, paste your public Supabase URL and Anon Key into <code class="mono-meta">js/config.js</code>.
+                Updates apply immediately in this browser. To make them default for all visitors on Vercel, paste your public Supabase URL and Anon Key into <code class="mono-meta">js/config.js</code>.
               </p>
               <div id="cmsSettingsSummary" class="form-grid"></div>
               <div class="btn-row" style="margin-top: 16px">
@@ -597,16 +595,6 @@
                 <button type="button" id="cmsCopyConfigBtn" class="btn btn-ghost btn-sm">Copy js/config.js Snippet</button>
               </div>
               <div id="cmsSettingsFeedback" style="margin-top: 12px" aria-live="polite"></div>
-            </div>
-
-            <div class="panel">
-              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Security Checklist (Free Tier)</h2>
-              <ul class="timeline-bullets">
-                <li><strong>Database RLS:</strong> Public visitors can only read <code class="mono-meta">published = true</code> items and insert into <code class="mono-meta">contact_messages</code>.</li>
-                <li><strong>Auth Gate:</strong> Writes and message reads require a verified Supabase Auth JWT.</li>
-                <li><strong>ImageKit Signing:</strong> <code class="mono-meta">/api/imagekit-auth</code> verifies your Supabase JWT before signing HMAC-SHA1 upload tokens; private key never leaves Vercel env vars.</li>
-                <li><strong>Bandwidth Control:</strong> All thumbnails append <code class="mono-meta">?tr=w-...,q-80,f-auto</code> via ImageKit.</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -622,7 +610,6 @@
           <a href="#projects" data-route="projects">Projects</a>
           <a href="#tools" data-route="tools">My Tools</a>
           <a href="#contact" data-route="contact">Contact</a>
-          <a href="#admin" data-route="admin">CMS</a>
         </div>
       </div>
     </footer>

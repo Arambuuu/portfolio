@@ -21,7 +21,7 @@ const LOCAL_GAL_KEY = "arambuuu_local_gallery_v1";
 const LOCAL_MSG_KEY = "arambuuu_local_messages_v1";
 const THEME_KEY = "arambuuu_theme_v1";
 
-const ROUTES = ["home", "about", "projects", "tools", "contact", "admin"];
+const ROUTES = ["home", "about", "projects", "tools", "contact", "studio-manage"];
 
 const state = {
   route: "home",
@@ -261,6 +261,7 @@ function setRoute(nextRoute) {
     tools: "My Tools — Arambuuu",
     contact: "Contact — Arambuuu",
     admin: "CMS — Arambuuu",
+    "studio-manage": "Studio CMS — Arambuuu",
   };
   document.title = titles[normalized] || "Arambuuu — Portfolio";
 
@@ -270,7 +271,7 @@ function setRoute(nextRoute) {
   nav?.classList.remove("is-open");
   toggle?.setAttribute("aria-expanded", "false");
 
-  if (normalized === "admin") {
+  if (normalized === "studio-manage") {
     updateCmsGate();
   }
   window.scrollTo({ top: 0, behavior: "instant" });
@@ -1121,17 +1122,31 @@ function initCms() {
     e.preventDefault();
     const fb = document.getElementById("cmsLoginFeedback");
     showNotice(fb, "");
+    const email = document.getElementById("cmsLoginEmail").value.trim().toLowerCase();
+    const password = document.getElementById("cmsLoginPassword").value;
+    const btn = document.getElementById("cmsLoginSubmitBtn");
+
+    // Local seeded admin login when Supabase is not yet connected
     if (!isSupabaseConfigured()) {
+      if (email === "arampiloto@gmail.com" && password === "12345678") {
+        state.localMode = true;
+        state.session = {
+          access_token: "local-seeded-token",
+          user: { email: "arampiloto@gmail.com" },
+        };
+        saveSession(state.session);
+        await loadPortfolioData();
+        updateCmsGate();
+        return;
+      }
       showNotice(
         fb,
-        "Save your Supabase URL and Anon Key first, or click Use Local Preview Mode.",
+        "Invalid credentials. Default seeded admin: arampiloto@gmail.com / 12345678",
         "err",
       );
       return;
     }
-    const email = document.getElementById("cmsLoginEmail").value.trim();
-    const password = document.getElementById("cmsLoginPassword").value;
-    const btn = document.getElementById("cmsLoginSubmitBtn");
+
     btn.disabled = true;
     btn.textContent = "Signing in…";
     try {
@@ -1146,12 +1161,7 @@ function initCms() {
     }
   });
 
-  document.getElementById("cmsLocalPreviewBtn").addEventListener("click", () => {
-    state.localMode = true;
-    updateCmsGate();
-  });
-
-  document.getElementById("cmsSignOutBtn").addEventListener("click", async () => {
+  document.getElementById("cmsSignOutBtn")?.addEventListener("click", async () => {
     await signOutSupabase();
     updateCmsGate();
   });
@@ -1408,7 +1418,7 @@ function renderAll() {
   renderAbout();
   renderProjectsPage();
   renderToolsPage();
-  if (state.route === "admin") updateCmsGate();
+  if (state.route === "studio-manage") updateCmsGate();
 }
 
 // ---------- Boot ----------
