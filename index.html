@@ -3,833 +3,690 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arambuuu | Portfolio</title>
-    <link
-      rel="shortcut icon"
-      href="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png"
-      type="image/x-icon"
+    <meta
+      name="description"
+      content="Portfolio of Ra Ashni Aram D. Piloto (Arambuuu) — Multimedia Artist and Front-End Developer crafting minimal web applications, brand systems, and visual experiences."
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Arambuuu — Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png?tr=w-64,f-png"
+      type="image/png"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-
-    <div id="cursor"></div>
-    <div id="cursor-ring"></div>
-
-    <div class="proj-preview" id="projPreview">
-      <div class="proj-preview-inner" id="previewContent">✦</div>
-    </div>
-
-    <!-- Loader -->
-    <div id="loader">
-      <div id="loader-text"><span>ARAMBUUU</span></div>
-      <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
-      <div id="loader-count">000</div>
-    </div>
-
-    <!-- Nav -->
-    <nav id="navbar">
-      <a href="#hero" class="nav-logo">
-        <img
-          src="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png"
-          alt="Arambuuu Logo"
-        />
-        <span>ARAMBUUU.</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-status">
-        <div class="nav-dot"></div>
-        Available for work
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <section id="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-bg-text">PORTFOLIO</div>
-      <div class="hero-eyebrow">
-        <div class="hero-eyebrow-line"></div>
-        <span>Multimedia Artist · Front-End Developer · Visual Creator</span>
-      </div>
-      <h1 class="hero-title">
-        <span class="line"><span>Crafting</span></span>
-        <span class="line"
-          ><span><em>Digital</em></span></span
-        >
-        <span class="line"><span>Experiences.</span></span>
-      </h1>
-      <div class="hero-badges">
-        <span class="hero-badge">Vue · React · Laravel</span>
-        <span class="hero-badge">Figma · Adobe CC</span>
-        <span class="hero-badge">Branding & UI/UX</span>
-        <span class="hero-badge">PH Based</span>
-      </div>
-      <div class="hero-bottom">
-        <p class="hero-desc">
-          <span
-            >Multimedia & Front-End Developer blending graphic design, UI/UX,
-            and web development to build responsive, visually engaging digital
-            products.</span
-          >
-        </p>
-        <a href="#work" class="hero-cta">
-          <span>View Work</span>
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <line x1="7" y1="17" x2="17" y2="7" />
-            <polyline points="7 7 17 7 17 17" />
-          </svg>
-        </a>
-      </div>
-      <div class="hero-scroll-hint">
-        <span>Scroll</span>
-        <div class="hero-scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- Marquee -->
-    <div class="marquee-wrap">
-      <div class="marquee-track">
-        <div class="marquee-item">UI/UX Design <span>✦</span></div>
-        <div class="marquee-item">Web Development <span>✦</span></div>
-        <div class="marquee-item">Visual Identity <span>✦</span></div>
-        <div class="marquee-item">Motion Design <span>✦</span></div>
-        <div class="marquee-item">Graphic Design <span>✦</span></div>
-        <div class="marquee-item">Brand Strategy <span>✦</span></div>
-        <div class="marquee-item">Photography <span>✦</span></div>
-        <div class="marquee-item">Videography <span>✦</span></div>
-        <div class="marquee-item">UI/UX Design <span>✦</span></div>
-        <div class="marquee-item">Web Development <span>✦</span></div>
-        <div class="marquee-item">Visual Identity <span>✦</span></div>
-        <div class="marquee-item">Motion Design <span>✦</span></div>
-        <div class="marquee-item">Graphic Design <span>✦</span></div>
-        <div class="marquee-item">Brand Strategy <span>✦</span></div>
-        <div class="marquee-item">Photography <span>✦</span></div>
-        <div class="marquee-item">Videography <span>✦</span></div>
-      </div>
-    </div>
-
-    <!-- About -->
-    <section id="about">
-      <div>
-        <div class="s-label reveal">
-          <span class="s-num">01 &nbsp;</span> About Me
-        </div>
-        <h2 class="s-title reveal">
-          Designer who<br /><em>thinks in code</em>,<br />codes in design.
-        </h2>
-        <p class="about-text reveal">
-          Hi, I'm <strong style="color: #fff">Ra Ashni Aram D. Piloto</strong> —
-          a multidisciplinary creative based in Davao del Norte, Philippines. I
-          specialize in crafting interfaces that are both visually compelling
-          and technically robust.
-        </p>
-        <p class="about-text reveal">
-          My work lives at the intersection of design and development — from
-          branding and print to responsive web apps built with Vue, React, and
-          Laravel. I've been designing and building since 2017 across freelance
-          and professional settings.
-        </p>
-        <div class="about-stats reveal">
-          <div>
-            <div class="stat-num">
-              8<span
-                style="
-                  background: inherit;
-                  -webkit-background-clip: inherit;
-                  -webkit-text-fill-color: inherit;
-                "
-                >+</span
-              >
-            </div>
-            <div class="stat-label">Years Active</div>
-          </div>
-          <div>
-            <div class="stat-num">
-              20<span
-                style="
-                  background: inherit;
-                  -webkit-background-clip: inherit;
-                  -webkit-text-fill-color: inherit;
-                "
-                >+</span
-              >
-            </div>
-            <div class="stat-label">Projects Done</div>
-          </div>
-          <div>
-            <div class="stat-num">
-              10<span
-                style="
-                  background: inherit;
-                  -webkit-background-clip: inherit;
-                  -webkit-text-fill-color: inherit;
-                "
-                >+</span
-              >
-            </div>
-            <div class="stat-label">Happy Clients</div>
-          </div>
-        </div>
-        <div class="tools-strip reveal">
-          <div class="tools-label">Tools & Technologies</div>
-          <div class="tools-list">
-            <span class="tool-chip">Vue</span>
-            <span class="tool-chip">React</span>
-            <span class="tool-chip">Laravel</span>
-            <span class="tool-chip">Quasar</span>
-            <span class="tool-chip">Tailwind CSS</span>
-            <span class="tool-chip">Figma</span>
-            <span class="tool-chip">Photoshop</span>
-            <span class="tool-chip">Illustrator</span>
-            <span class="tool-chip">Premiere Pro</span>
-            <span class="tool-chip">After Effects</span>
-            <span class="tool-chip">InDesign</span>
-            <span class="tool-chip">CorelDRAW</span>
-          </div>
-        </div>
-      </div>
-      <div class="about-img-wrap reveal-l">
-        <div class="about-img-box">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a href="#home" class="brand-link" data-route="home">
           <img
-            src="https://ik.imagekit.io/arambuuu/Arambuuu/profile.png"
-            alt="Ra Ashni Aram D. Piloto"
+            src="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png?tr=w-96,q-85,f-auto"
+            alt="Arambuuu mark"
+            width="30"
+            height="30"
+          />
+          <span>Arambuuu</span>
+        </a>
+
+        <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+          <a href="#home" class="nav-link" data-route="home" aria-current="page">Home</a>
+          <a href="#about" class="nav-link" data-route="about">About</a>
+          <a href="#projects" class="nav-link" data-route="projects">Projects</a>
+          <a href="#tools" class="nav-link" data-route="tools">My Tools</a>
+          <a href="#contact" class="nav-link" data-route="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="status-pill" title="Current work status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available · PH</span>
+          </div>
+          <a href="#admin" class="cms-nav-btn" data-route="admin">CMS</a>
+          <button
+            type="button"
+            id="themeToggleBtn"
+            class="icon-btn"
+            aria-label="Toggle color theme"
+            title="Switch light / dark theme"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="menuToggleBtn"
+            class="icon-btn menu-toggle"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+            aria-label="Toggle navigation menu"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+              <line x1="4" y1="7" x2="20" y2="7"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="17" x2="20" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <!-- PAGE 1: HOME -->
+      <section id="page-home" class="page-view is-active" aria-labelledby="homeHeading">
+        <div class="home-spread">
+          <div class="home-thesis">
+            <h1 id="homeHeading" class="display-title">
+              Front-end clarity meets visual craft.
+            </h1>
+            <p class="lead-copy">
+              I'm Ra Ashni Aram D. Piloto (Arambuuu), a multimedia artist and front-end web developer in Davao del Norte, Philippines, building fast interfaces and cohesive brand systems since 2017.
+            </p>
+            <p class="discipline-line">
+              Vue · React · Quasar · Laravel · Tailwind CSS · Figma · Adobe CC
+            </p>
+            <div class="btn-row">
+              <a href="#projects" class="btn btn-primary" data-route="projects">Explore Projects &amp; Gallery</a>
+              <a href="#contact" class="btn btn-secondary" data-route="contact">Start a Conversation</a>
+            </div>
+            <div class="home-meta-list">
+              <div>
+                <div class="meta-label">Current Focus</div>
+                <div class="meta-value">Front-End Engineering &amp; Brand Systems</div>
+              </div>
+              <div>
+                <div class="meta-label">Experience</div>
+                <div class="meta-value">Bridge Digital · Freelance since 2017</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="specimen-stage" aria-label="Featured work specimen">
+            <div id="homeSpecimenFrame" class="specimen-frame" role="button" tabindex="0" aria-label="Open featured specimen details">
+              <img
+                id="homeSpecimenImg"
+                src="https://ik.imagekit.io/arambuuu/Arambuuu/profile.png?tr=w-960,q-82,f-auto"
+                alt="Featured project specimen"
+              />
+            </div>
+            <div class="specimen-body">
+              <div class="specimen-top">
+                <h2 id="homeSpecimenTitle" class="specimen-title">Loading specimen…</h2>
+                <span id="homeSpecimenCategory" class="chip chip-accent">Work</span>
+              </div>
+              <p id="homeSpecimenSummary" class="body-copy"></p>
+              <div class="btn-row">
+                <button type="button" id="homeSpecimenOpenBtn" class="btn btn-secondary btn-sm">Inspect Case Study</button>
+                <span id="homeSpecimenMeta" class="mono-meta"></span>
+              </div>
+            </div>
+            <div id="homeSpecimenTabs" class="specimen-tabs" role="tablist" aria-label="Switch featured specimen"></div>
+          </aside>
+        </div>
+
+        <div class="section-bar">
+          <h2 class="section-heading">Selected Projects</h2>
+          <a href="#projects" class="text-link" data-route="projects">View all projects &amp; gallery →</a>
+        </div>
+        <div id="homeProjectLedger" class="project-ledger"></div>
+
+        <div class="section-bar">
+          <h2 class="section-heading">Visual Gallery Highlights</h2>
+          <a href="#projects" class="text-link" data-route="projects">Open full gallery →</a>
+        </div>
+        <div id="homeGalleryGrid" class="gallery-grid"></div>
+      </section>
+
+      <!-- PAGE 2: ABOUT -->
+      <section id="page-about" class="page-view" aria-labelledby="aboutHeading">
+        <div class="about-grid">
+          <div>
+            <h1 id="aboutHeading" class="page-title">Designer who thinks in code, codes in design.</h1>
+            <p class="lead-copy" style="margin-bottom: 18px">
+              Hi, I'm Ra Ashni Aram D. Piloto — a multidisciplinary creative and front-end web developer based in Davao del Norte, Philippines.
+            </p>
+            <p class="body-copy" style="margin-bottom: 16px">
+              Since 2017, I have worked across both print and interactive digital products: crafting brand identities, promotional motion graphics, and UI/UX prototypes alongside production web applications built with Vue, React, Quasar, Laravel, and Tailwind CSS.
+            </p>
+            <p class="body-copy">
+              My goal in every project is directness: clean structure, legible typography, honest performance on real devices, and maintainable CMS workflows that teams can actually run without friction.
+            </p>
+          </div>
+
+          <figure class="portrait-figure">
+            <img
+              src="https://ik.imagekit.io/arambuuu/Arambuuu/profile.png?tr=w-720,q-85,f-auto"
+              alt="Portrait of Ra Ashni Aram D. Piloto"
+              loading="lazy"
+            />
+            <figcaption>
+              <span>Ra Ashni Aram D. Piloto</span>
+              <span>Davao del Norte, PH</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <h2 class="section-heading">Work Experience</h2>
+        <div id="aboutExperienceList" class="timeline-ledger"></div>
+
+        <h2 class="section-heading">Academic Foundation</h2>
+        <div id="aboutEducationBox" class="timeline-ledger"></div>
+      </section>
+
+      <!-- PAGE 3: PROJECTS & GALLERY -->
+      <section id="page-projects" class="page-view" aria-labelledby="projectsHeading">
+        <h1 id="projectsHeading" class="page-title">Projects &amp; Visual Gallery</h1>
+        <p class="lead-copy">
+          Production web builds, UI/UX systems, branding deliverables, and visual works managed live via Supabase and ImageKit.
+        </p>
+
+        <div class="toolbar">
+          <div id="projectCategoryFilters" class="filter-pills" role="group" aria-label="Filter projects by category"></div>
+          <label class="sr-only" for="projectSearchInput">Search projects and gallery</label>
+          <input
+            type="search"
+            id="projectSearchInput"
+            class="search-input"
+            placeholder="Search projects, tags, or tools…"
           />
         </div>
-        <div class="about-tag">Arambuuu</div>
-        <div class="about-tag-2">PH — Based</div>
-      </div>
-    </section>
 
-    <!-- Experience -->
-    <section id="experience">
-      <div class="s-label reveal">
-        <span class="s-num">02 &nbsp;</span> Work Experience
-      </div>
-      <h2 class="s-title reveal">Where I've<br /><em>Made Impact</em></h2>
-      <div class="exp-grid">
-        <!-- Job 1 -->
-        <div class="exp-card reveal">
-          <div class="exp-period">July 2025 – May 2026</div>
-          <div class="exp-role">Front-end Web Developer</div>
-          <div class="exp-company">Bridge Digital Transformations Inc.</div>
-          <ul class="exp-list">
-            <li>
-              Developed and maintained responsive business websites using
-              Laravel, Vue, Quasar, React, and Tailwind CSS
-            </li>
-            <li>
-              Built user-friendly interfaces and optimized layouts for desktop
-              and mobile
-            </li>
-            <li>
-              Managed website content through CMS platforms per business
-              requirements
-            </li>
-            <li>
-              Designed digital marketing materials and social media graphics for
-              campaigns
-            </li>
-            <li>
-              Improved UI consistency, visual presentation, and overall user
-              experience
-            </li>
-          </ul>
-          <div class="exp-tools">
-            <span class="exp-tool">Vue</span>
-            <span class="exp-tool">Quasar</span>
-            <span class="exp-tool">React</span>
-            <span class="exp-tool">Laravel</span>
-            <span class="exp-tool">Tailwind</span>
-            <span class="exp-tool">Figma</span>
-          </div>
-        </div>
-        <!-- Job 2 -->
-        <div class="exp-card reveal">
-          <div class="exp-period">2017 – Present</div>
-          <div class="exp-role">Freelancer — Multimedia & Visual Artist</div>
-          <div class="exp-company">Self-Employed</div>
-          <ul class="exp-list">
-            <li>
-              Designed branding materials: logos, brochures, posters,
-              tarpaulins, and social media graphics
-            </li>
-            <li>
-              Developed responsive websites and landing pages using HTML, CSS,
-              JS, Vue, React, and Laravel
-            </li>
-            <li>
-              Created UI/UX prototypes and layouts using Figma, Wix, Webflow,
-              and SquareSpace
-            </li>
-            <li>
-              Edited promotional videos using Premiere Pro, After Effects,
-              CapCut, and Filmora
-            </li>
-            <li>
-              Managed digital content and social media assets for online
-              business pages
-            </li>
-          </ul>
-          <div class="exp-tools">
-            <span class="exp-tool">Photoshop</span>
-            <span class="exp-tool">Illustrator</span>
-            <span class="exp-tool">Premiere Pro</span>
-            <span class="exp-tool">After Effects</span>
-            <span class="exp-tool">CorelDRAW</span>
-            <span class="exp-tool">Figma</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <h2 class="section-heading" style="margin-top: 24px">Case Studies &amp; Builds</h2>
+        <div id="projectsLedger" class="project-ledger"></div>
 
-    <!-- Skills -->
-    <section id="skills">
-      <div class="skills-hdr">
-        <div>
-          <div class="s-label">
-            <span class="s-num">03 &nbsp;</span> Expertise
-          </div>
-          <h2 class="s-title" style="margin-bottom: 0">
-            What I <em>Do Best</em>
-          </h2>
-        </div>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <span class="skill-icon">◈</span>
-          <div class="skill-name">UI/UX Design</div>
-          <div class="skill-desc">
-            Designing interfaces that balance beauty and usability — Figma,
-            wireframes, prototypes, and full design systems.
-          </div>
-          <div class="skill-level">
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-level="0.92"></div>
-            </div>
-            <div class="skill-pct">92%</div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">⟐</span>
-          <div class="skill-name">Front-End Development</div>
-          <div class="skill-desc">
-            Building fast, responsive experiences with Vue, React, Quasar,
-            Laravel, and Tailwind CSS.
-          </div>
-          <div class="skill-level">
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-level="0.88"></div>
-            </div>
-            <div class="skill-pct">88%</div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">✳</span>
-          <div class="skill-name">Graphic Design</div>
-          <div class="skill-desc">
-            Creating visual systems, logos, branding, print and digital assets
-            with Photoshop, Illustrator, and InDesign.
-          </div>
-          <div class="skill-level">
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-level="0.93"></div>
-            </div>
-            <div class="skill-pct">93%</div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">◎</span>
-          <div class="skill-name">Motion & Video</div>
-          <div class="skill-desc">
-            Bringing content to life through promotional video edits and motion
-            graphics with Premiere Pro and After Effects.
-          </div>
-          <div class="skill-level">
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-level="0.78"></div>
-            </div>
-            <div class="skill-pct">78%</div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">⬡</span>
-          <div class="skill-name">Brand Identity</div>
-          <div class="skill-desc">
-            Developing visual identities — logos, brochures, tarpaulins, and
-            social media graphics that communicate values.
-          </div>
-          <div class="skill-level">
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-level="0.90"></div>
-            </div>
-            <div class="skill-pct">90%</div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">⋄</span>
-          <div class="skill-name">Photography & Content</div>
-          <div class="skill-desc">
-            Capturing and managing digital content, social media assets, and
-            photography for online business pages.
-          </div>
-          <div class="skill-level">
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-level="0.80"></div>
-            </div>
-            <div class="skill-pct">80%</div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <h2 class="section-heading">Visual Gallery</h2>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </section>
 
-    <!-- Work -->
-    <section id="work">
-      <div class="work-hdr">
-        <div>
-          <div class="s-label">
-            <span class="s-num">04 &nbsp;</span> Selected Work
-          </div>
-          <h2 class="s-title" style="margin-bottom: 0">
-            Projects That<br /><em>Define Me</em>
-          </h2>
-        </div>
-        <a
-          href="https://arambuuu.my.canva.site/portfolio-arambuuu"
-          target="_blank"
-          class="all-link"
-        >
-          Full Portfolio
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <line x1="7" y1="17" x2="17" y2="7" />
-            <polyline points="7 7 17 7 17 17" />
-          </svg>
-        </a>
-      </div>
-      <div class="proj-list">
-        <a href="#" class="proj-row" data-preview="◈" data-color="#FFE566">
-          <div class="proj-num">01</div>
-          <div>
-            <div class="proj-name">Branding & Identity Systems</div>
-            <div class="proj-sub">
-              Logos · Brochures · Tarpaulins · Social Media Graphics
-            </div>
-          </div>
-          <div class="proj-tags">
-            <div class="proj-tag">Branding</div>
-            <div class="proj-tag">Illustrator</div>
-            <div class="proj-tag">Print</div>
-          </div>
-          <div class="proj-arrow">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </div>
-        </a>
-        <a href="#" class="proj-row" data-preview="⟐" data-color="#BB86FC">
-          <div class="proj-num">02</div>
-          <div>
-            <div class="proj-name">Responsive Web Applications</div>
-            <div class="proj-sub">
-              Front-End · Vue · React · Laravel · Tailwind CSS
-            </div>
-          </div>
-          <div class="proj-tags">
-            <div class="proj-tag">Web Dev</div>
-            <div class="proj-tag">Vue</div>
-            <div class="proj-tag">Laravel</div>
-          </div>
-          <div class="proj-arrow">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </div>
-        </a>
-        <a href="#" class="proj-row" data-preview="✳" data-color="#4ADE80">
-          <div class="proj-num">03</div>
-          <div>
-            <div class="proj-name">UI/UX Prototypes & Layouts</div>
-            <div class="proj-sub">Figma · Wix · Webflow · SquareSpace</div>
-          </div>
-          <div class="proj-tags">
-            <div class="proj-tag">UI/UX</div>
-            <div class="proj-tag">Figma</div>
-          </div>
-          <div class="proj-arrow">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </div>
-        </a>
-        <a href="#" class="proj-row" data-preview="◎" data-color="#FFBB33">
-          <div class="proj-num">04</div>
-          <div>
-            <div class="proj-name">Promotional Video & Motion</div>
-            <div class="proj-sub">
-              Adobe Premiere Pro · After Effects · CapCut · Filmora
-            </div>
-          </div>
-          <div class="proj-tags">
-            <div class="proj-tag">Motion</div>
-            <div class="proj-tag">Video</div>
-          </div>
-          <div class="proj-arrow">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </div>
-        </a>
-        <a href="#" class="proj-row" data-preview="⬡" data-color="#8B47F0">
-          <div class="proj-num">05</div>
-          <div>
-            <div class="proj-name">Digital Marketing Assets</div>
-            <div class="proj-sub">
-              Social Media Content · Web Banners · Ad Creatives
-            </div>
-          </div>
-          <div class="proj-tags">
-            <div class="proj-tag">Digital</div>
-            <div class="proj-tag">Social</div>
-          </div>
-          <div class="proj-arrow">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <div class="s-label reveal">
-        <span class="s-num">05 &nbsp;</span> Education
-      </div>
-      <h2 class="s-title reveal">Academic<br /><em>Foundation</em></h2>
-      <div class="edu-card reveal">
-        <div class="edu-icon">◈</div>
-        <div>
-          <div class="edu-year">July 2021 – June 2025</div>
-          <div class="edu-degree">
-            Bachelor of Science in Information Technology
-          </div>
-          <div class="edu-school">Davao del Norte State College</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="contact-bg">HELLO</div>
-      <div style="position: relative">
-        <div class="s-label reveal" style="justify-content: center">
-          <span class="s-num">06 &nbsp;</span> Get in Touch
-        </div>
-        <h2 class="contact-title reveal">
-          Let's Build<br /><em>Something</em><br />Great Together.
-        </h2>
-        <p class="contact-sub reveal">
-          Have a project in mind? A collaboration? Or just want to say hi? My
-          inbox is always open.
+      <!-- PAGE 4: MY TOOLS -->
+      <section id="page-tools" class="page-view" aria-labelledby="toolsHeading">
+        <h1 id="toolsHeading" class="page-title">My Tools</h1>
+        <p class="lead-copy">
+          The software, frameworks, and creative production stack I rely on daily across web engineering, UI/UX design, print, and motion.
         </p>
-        <a href="mailto:arampiloto@gmail.com" class="contact-email reveal"
-          >arampiloto@gmail.com</a
-        >
-        <div class="contact-socials reveal">
-          <a
-            href="https://linkedin.com/in/arambuuu"
-            target="_blank"
-            class="soc-link"
-            >LinkedIn</a
-          >
-          <div class="soc-sep"></div>
-          <a href="https://github.com/Arambuuu" target="_blank" class="soc-link"
-            >GitHub</a
-          >
-          <div class="soc-sep"></div>
-          <a
-            href="https://arambuuu.my.canva.site/portfolio-arambuuu"
-            target="_blank"
-            class="soc-link"
-            >Portfolio</a
-          >
-          <div class="soc-sep"></div>
-          <a href="tel:09917219541" class="soc-link">+63 991 721 9541</a>
+
+        <div class="toolbar">
+          <div id="toolsFilterPills" class="filter-pills" role="group" aria-label="Filter tools by discipline"></div>
+          <span id="toolsCountMeta" class="mono-meta"></span>
+        </div>
+
+        <div class="tools-table-wrap">
+          <table class="tools-table">
+            <thead>
+              <tr>
+                <th>Tool / Stack</th>
+                <th>Discipline</th>
+                <th>Primary Use Case</th>
+                <th>Typical Pairing</th>
+              </tr>
+            </thead>
+            <tbody id="toolsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- PAGE 5: CONTACT -->
+      <section id="page-contact" class="page-view" aria-labelledby="contactHeading">
+        <h1 id="contactHeading" class="page-title">Let's build something clear and lasting.</h1>
+        <p class="lead-copy" style="margin-bottom: 36px">
+          Available for front-end development, UI/UX architecture, brand identity systems, and multimedia collaborations.
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <h2 class="section-heading" style="margin-top: 0">Direct Channels</h2>
+            <div class="contact-ledger">
+              <div class="contact-row">
+                <span class="mono-meta">Email</span>
+                <a href="mailto:arampiloto@gmail.com">arampiloto@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span class="mono-meta">Phone</span>
+                <a href="tel:+639917219541">+63 991 721 9541</a>
+              </div>
+              <div class="contact-row">
+                <span class="mono-meta">Location</span>
+                <span>Davao del Norte, Philippines</span>
+              </div>
+              <div class="contact-row">
+                <span class="mono-meta">LinkedIn</span>
+                <a href="https://linkedin.com/in/arambuuu" target="_blank" rel="noopener noreferrer">linkedin.com/in/arambuuu</a>
+              </div>
+              <div class="contact-row">
+                <span class="mono-meta">GitHub</span>
+                <a href="https://github.com/Arambuuu" target="_blank" rel="noopener noreferrer">github.com/Arambuuu</a>
+              </div>
+              <div class="contact-row">
+                <span class="mono-meta">Canva Archive</span>
+                <a href="https://arambuuu.my.canva.site/portfolio-arambuuu" target="_blank" rel="noopener noreferrer">portfolio-arambuuu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2 class="section-heading" style="margin-top: 0; margin-bottom: 16px">Send an Inquiry</h2>
+            <form id="contactForm" class="form-grid" novalidate>
+              <!-- Honeypot field for spam bots -->
+              <div class="sr-only" aria-hidden="true">
+                <label for="contactWebsite">Leave this blank</label>
+                <input type="text" id="contactWebsite" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-row-2">
+                <div class="field">
+                  <label for="contactName">Your Name</label>
+                  <input type="text" id="contactName" name="sender_name" required maxlength="120" placeholder="Jane Doe" />
+                </div>
+                <div class="field">
+                  <label for="contactEmail">Email Address</label>
+                  <input type="email" id="contactEmail" name="sender_email" required maxlength="180" placeholder="jane@studio.com" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="contactSubject">Project Scope / Subject</label>
+                <input type="text" id="contactSubject" name="subject" maxlength="200" placeholder="Web App Front-End / Brand Identity" />
+              </div>
+
+              <div class="field">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" rows="5" required maxlength="2000" placeholder="Share timeline, goals, or links..."></textarea>
+              </div>
+
+              <div id="contactFeedback" aria-live="polite"></div>
+
+              <div class="btn-row">
+                <button type="submit" id="contactSubmitBtn" class="btn btn-primary">Send Message</button>
+                <a id="contactMailtoFallback" href="mailto:arampiloto@gmail.com" class="btn btn-ghost">Open Email Client</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CMS / CONTENT MANAGER (#admin) -->
+      <section id="page-admin" class="page-view" aria-labelledby="adminHeading">
+        <div class="cms-header">
+          <div>
+            <h1 id="adminHeading" class="page-title" style="margin-bottom: 4px">Content Manager (CMS)</h1>
+            <p id="cmsConnectionStatus" class="mono-meta">Checking connection…</p>
+          </div>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-secondary btn-sm" data-route="projects">View Live Site</a>
+            <button type="button" id="cmsSignOutBtn" class="btn btn-ghost btn-sm" hidden>Sign Out</button>
+          </div>
+        </div>
+
+        <!-- Auth / Setup Gate -->
+        <div id="cmsAuthGate" class="cms-split">
+          <div class="panel">
+            <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Owner Sign-In</h2>
+            <p class="body-copy" style="margin-bottom: 18px">
+              Sign in with your Supabase Auth account to publish or edit Projects, Gallery artworks, and Inquiries. Row Level Security enforces write permissions server-side.
+            </p>
+            <form id="cmsLoginForm" class="form-grid">
+              <div class="field">
+                <label for="cmsLoginEmail">Admin Email</label>
+                <input type="email" id="cmsLoginEmail" required autocomplete="email" placeholder="arampiloto@gmail.com" />
+              </div>
+              <div class="field">
+                <label for="cmsLoginPassword">Password</label>
+                <input type="password" id="cmsLoginPassword" required autocomplete="current-password" placeholder="••••••••••••" />
+              </div>
+              <div id="cmsLoginFeedback" aria-live="polite"></div>
+              <div class="btn-row">
+                <button type="submit" id="cmsLoginSubmitBtn" class="btn btn-primary">Sign In to CMS</button>
+                <button type="button" id="cmsLocalPreviewBtn" class="btn btn-secondary">Use Local Preview Mode</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="panel">
+            <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Supabase &amp; ImageKit Connection</h2>
+            <p class="body-copy" style="margin-bottom: 16px">
+              Connect your free-tier Supabase project URL and public Anon Key. Private ImageKit keys stay strictly in Vercel environment variables (<code class="mono-meta">/api/imagekit-auth</code>).
+            </p>
+            <form id="cmsQuickConfigForm" class="form-grid">
+              <div class="field">
+                <label for="cfgSupabaseUrl">Supabase Project URL</label>
+                <input type="url" id="cfgSupabaseUrl" placeholder="https://xyzcompany.supabase.co" />
+              </div>
+              <div class="field">
+                <label for="cfgSupabaseAnon">Supabase Anon Key</label>
+                <input type="text" id="cfgSupabaseAnon" placeholder="eyJhbGciOi..." />
+              </div>
+              <div class="form-row-2">
+                <div class="field">
+                  <label for="cfgImageKitEndpoint">ImageKit URL Endpoint</label>
+                  <input type="url" id="cfgImageKitEndpoint" placeholder="https://ik.imagekit.io/arambuuu" />
+                </div>
+                <div class="field">
+                  <label for="cfgImageKitFolder">Upload Folder</label>
+                  <input type="text" id="cfgImageKitFolder" placeholder="/Arambuuu/cms" />
+                </div>
+              </div>
+              <div id="cmsConfigFeedback" aria-live="polite"></div>
+              <div class="btn-row">
+                <button type="submit" class="btn btn-secondary">Save Connection</button>
+                <button type="button" id="cmsResetConfigBtn" class="btn btn-ghost">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Authenticated CMS Workspace -->
+        <div id="cmsWorkspace" hidden>
+          <div class="cms-tabs" role="tablist" aria-label="CMS sections">
+            <button type="button" class="filter-pill" data-cms-tab="projects" aria-pressed="true">Projects</button>
+            <button type="button" class="filter-pill" data-cms-tab="gallery" aria-pressed="false">Gallery</button>
+            <button type="button" class="filter-pill" data-cms-tab="messages" aria-pressed="false">Inquiries</button>
+            <button type="button" class="filter-pill" data-cms-tab="settings" aria-pressed="false">Connection &amp; Export</button>
+          </div>
+
+          <!-- Tab: Projects Manager -->
+          <div id="cmsTabProjects" class="cms-split">
+            <div class="panel">
+              <div class="specimen-top" style="margin-bottom: 14px">
+                <h2 id="projFormHeading" class="section-heading" style="margin: 0">Add Project</h2>
+                <button type="button" id="projFormResetBtn" class="btn btn-ghost btn-sm">New Entry</button>
+              </div>
+              <form id="cmsProjectForm" class="form-grid">
+                <input type="hidden" id="projId" />
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="projTitle">Project Title</label>
+                    <input type="text" id="projTitle" required maxlength="160" placeholder="Client Portal Redesign" />
+                  </div>
+                  <div class="field">
+                    <label for="projSlug">URL Slug</label>
+                    <input type="text" id="projSlug" required pattern="[a-z0-9-]+" placeholder="client-portal-redesign" />
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="projCategory">Category</label>
+                    <select id="projCategory">
+                      <option value="Web Dev">Web Dev</option>
+                      <option value="UI/UX">UI/UX</option>
+                      <option value="Branding">Branding</option>
+                      <option value="Motion & Video">Motion &amp; Video</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="projYear">Year</label>
+                    <input type="text" id="projYear" maxlength="20" value="2026" />
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="projClient">Client / Context</label>
+                    <input type="text" id="projClient" maxlength="160" placeholder="Bridge Digital / Freelance" />
+                  </div>
+                  <div class="field">
+                    <label for="projLiveUrl">Live / Archive URL (optional)</label>
+                    <input type="url" id="projLiveUrl" placeholder="https://..." />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="projTags">Tags (comma-separated)</label>
+                  <input type="text" id="projTags" placeholder="Vue, Tailwind CSS, Figma" />
+                </div>
+                <div class="field">
+                  <label for="projSummary">Short Summary</label>
+                  <textarea id="projSummary" rows="2" required maxlength="600" placeholder="One-sentence outcome and scope..."></textarea>
+                </div>
+                <div class="field">
+                  <label for="projDescription">Full Case Study Notes</label>
+                  <textarea id="projDescription" rows="4" maxlength="4000" placeholder="Challenge, architecture, deliverables..."></textarea>
+                </div>
+
+                <!-- ImageKit Dual Input -->
+                <div class="field">
+                  <label for="projImageUrl">Cover Image (ImageKit URL or Path)</label>
+                  <div class="upload-box">
+                    <input type="text" id="projImageUrl" required placeholder="https://ik.imagekit.io/arambuuu/... or /Arambuuu/project.png" />
+                    <div class="btn-row">
+                      <label class="btn btn-secondary btn-sm" style="cursor: pointer">
+                        Upload to ImageKit
+                        <input type="file" id="projImageFile" accept="image/*" class="sr-only" />
+                      </label>
+                      <span id="projUploadStatus" class="mono-meta"></span>
+                    </div>
+                    <img
+                      id="projImagePreview"
+                      class="preview-box"
+                      src="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png?tr=w-480,q-80,f-auto"
+                      alt="Project cover preview"
+                      hidden
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem">
+                    <input type="checkbox" id="projFeatured" />
+                    Feature on Home Specimen Stage
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem">
+                    <input type="checkbox" id="projPublished" checked />
+                    Published (visible to visitors)
+                  </label>
+                </div>
+
+                <div id="projFormFeedback" aria-live="polite"></div>
+                <button type="submit" id="projSaveBtn" class="btn btn-primary">Save Project</button>
+              </form>
+            </div>
+
+            <div>
+              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Manage Projects</h2>
+              <div id="cmsProjectsList" class="cms-list"></div>
+            </div>
+          </div>
+
+          <!-- Tab: Gallery Manager -->
+          <div id="cmsTabGallery" class="cms-split" hidden>
+            <div class="panel">
+              <div class="specimen-top" style="margin-bottom: 14px">
+                <h2 id="galFormHeading" class="section-heading" style="margin: 0">Add Gallery Artwork</h2>
+                <button type="button" id="galFormResetBtn" class="btn btn-ghost btn-sm">New Entry</button>
+              </div>
+              <form id="cmsGalleryForm" class="form-grid">
+                <input type="hidden" id="galId" />
+                <div class="field">
+                  <label for="galTitle">Artwork Title</label>
+                  <input type="text" id="galTitle" required maxlength="160" placeholder="Brand Poster Series 01" />
+                </div>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="galCategory">Category</label>
+                    <select id="galCategory">
+                      <option value="Branding">Branding</option>
+                      <option value="UI/UX">UI/UX</option>
+                      <option value="Print & Poster">Print &amp; Poster</option>
+                      <option value="Photography">Photography</option>
+                      <option value="Motion Still">Motion Still</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="galAspectRatio">Frame Ratio</label>
+                    <select id="galAspectRatio">
+                      <option value="4/3">4 / 3 (Landscape)</option>
+                      <option value="16/10">16 / 10 (Wide)</option>
+                      <option value="1/1">1 / 1 (Square)</option>
+                      <option value="3/4">3 / 4 (Portrait)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="galYear">Year</label>
+                    <input type="text" id="galYear" maxlength="20" value="2026" />
+                  </div>
+                  <div class="field">
+                    <label for="galTool">Tools Used</label>
+                    <input type="text" id="galTool" maxlength="120" placeholder="Illustrator · Photoshop" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="galCaption">Caption</label>
+                  <textarea id="galCaption" rows="3" maxlength="500" placeholder="Short note about medium, client, or technique..."></textarea>
+                </div>
+
+                <!-- ImageKit Dual Input -->
+                <div class="field">
+                  <label for="galImageUrl">Artwork Image (ImageKit URL or Path)</label>
+                  <div class="upload-box">
+                    <input type="text" id="galImageUrl" required placeholder="https://ik.imagekit.io/arambuuu/... or /Arambuuu/art.png" />
+                    <div class="btn-row">
+                      <label class="btn btn-secondary btn-sm" style="cursor: pointer">
+                        Upload to ImageKit
+                        <input type="file" id="galImageFile" accept="image/*" class="sr-only" />
+                      </label>
+                      <span id="galUploadStatus" class="mono-meta"></span>
+                    </div>
+                    <img
+                      id="galImagePreview"
+                      class="preview-box"
+                      src="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png?tr=w-480,q-80,f-auto"
+                      alt="Gallery artwork preview"
+                      hidden
+                    />
+                  </div>
+                </div>
+
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem">
+                  <input type="checkbox" id="galPublished" checked />
+                  Published (visible in Visual Gallery)
+                </label>
+
+                <div id="galFormFeedback" aria-live="polite"></div>
+                <button type="submit" id="galSaveBtn" class="btn btn-primary">Save Gallery Item</button>
+              </form>
+            </div>
+
+            <div>
+              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Manage Gallery</h2>
+              <div id="cmsGalleryList" class="cms-list"></div>
+            </div>
+          </div>
+
+          <!-- Tab: Contact Inquiries -->
+          <div id="cmsTabMessages" hidden>
+            <div class="panel">
+              <div class="specimen-top" style="margin-bottom: 16px">
+                <h2 class="section-heading" style="margin: 0">Visitor Inquiries</h2>
+                <button type="button" id="cmsRefreshMsgsBtn" class="btn btn-secondary btn-sm">Refresh</button>
+              </div>
+              <div id="cmsMessagesList" class="cms-list"></div>
+            </div>
+          </div>
+
+          <!-- Tab: Connection & Export -->
+          <div id="cmsTabSettings" class="cms-split" hidden>
+            <div class="panel">
+              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Active Endpoints</h2>
+              <p class="body-copy" style="margin-bottom: 14px">
+                Updates apply immediately in this browser. To make them global for all visitors on Vercel, paste your public Supabase URL and Anon Key into <code class="mono-meta">js/config.js</code>.
+              </p>
+              <div id="cmsSettingsSummary" class="form-grid"></div>
+              <div class="btn-row" style="margin-top: 16px">
+                <button type="button" id="cmsExportJsonBtn" class="btn btn-secondary btn-sm">Download Content JSON</button>
+                <button type="button" id="cmsCopyConfigBtn" class="btn btn-ghost btn-sm">Copy js/config.js Snippet</button>
+              </div>
+              <div id="cmsSettingsFeedback" style="margin-top: 12px" aria-live="polite"></div>
+            </div>
+
+            <div class="panel">
+              <h2 class="section-heading" style="margin-top: 0; margin-bottom: 14px">Security Checklist (Free Tier)</h2>
+              <ul class="timeline-bullets">
+                <li><strong>Database RLS:</strong> Public visitors can only read <code class="mono-meta">published = true</code> items and insert into <code class="mono-meta">contact_messages</code>.</li>
+                <li><strong>Auth Gate:</strong> Writes and message reads require a verified Supabase Auth JWT.</li>
+                <li><strong>ImageKit Signing:</strong> <code class="mono-meta">/api/imagekit-auth</code> verifies your Supabase JWT before signing HMAC-SHA1 upload tokens; private key never leaves Vercel env vars.</li>
+                <li><strong>Bandwidth Control:</strong> All thumbnails append <code class="mono-meta">?tr=w-...,q-80,f-auto</code> via ImageKit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Arambuuu · Ra Ashni Aram D. Piloto</span>
+        <div class="footer-links">
+          <a href="#home" data-route="home">Home</a>
+          <a href="#about" data-route="about">About</a>
+          <a href="#projects" data-route="projects">Projects</a>
+          <a href="#tools" data-route="tools">My Tools</a>
+          <a href="#contact" data-route="contact">Contact</a>
+          <a href="#admin" data-route="admin">CMS</a>
         </div>
       </div>
-    </section>
-
-    <footer>
-      <span
-        >© 2026 Arambuuu · Ra Ashni Aram D. Piloto. All rights reserved.</span
-      >
-      <span>Designed & Built with ✦</span>
-      <a href="#hero">Back to top ↑</a>
     </footer>
 
-    <script>
-      // Cursor
-      const cur = document.getElementById("cursor"),
-        ring = document.getElementById("cursor-ring");
-      let mx = 0,
-        my = 0,
-        rx = 0,
-        ry = 0;
-      document.addEventListener("mousemove", (e) => {
-        mx = e.clientX;
-        my = e.clientY;
-      });
-      (function tick() {
-        cur.style.left = mx + "px";
-        cur.style.top = my + "px";
-        rx += (mx - rx) * 0.12;
-        ry += (my - ry) * 0.12;
-        ring.style.left = rx + "px";
-        ring.style.top = ry + "px";
-        requestAnimationFrame(tick);
-      })();
+    <!-- Project Case Study Dialog -->
+    <dialog id="projectDialog" class="sheet-dialog" aria-labelledby="dlgProjectTitle">
+      <div class="dialog-head">
+        <div>
+          <span id="dlgProjectCategory" class="chip chip-accent">Category</span>
+        </div>
+        <button type="button" id="dlgProjectClose" class="icon-btn" aria-label="Close project details">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <img
+          id="dlgProjectImg"
+          class="dialog-media"
+          src="https://ik.imagekit.io/arambuuu/Arambuuu/profile.png?tr=w-1200,q-85,f-auto"
+          alt="Project case study preview"
+        />
+        <h2 id="dlgProjectTitle" class="page-title" style="font-size: 1.75rem; margin-bottom: 0"></h2>
+        <p id="dlgProjectMeta" class="mono-meta"></p>
+        <p id="dlgProjectDesc" class="body-copy"></p>
+        <div id="dlgProjectTags" class="chip-group"></div>
+        <div class="btn-row">
+          <a id="dlgProjectLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Open External Link</a>
+        </div>
+      </div>
+    </dialog>
 
-      // Loader
-      const ltxt = document.querySelector("#loader-text span"),
-        lbar = document.getElementById("loader-bar"),
-        lcnt = document.getElementById("loader-count"),
-        ldr = document.getElementById("loader");
-      setTimeout(() => {
-        ltxt.style.transition = "transform .88s cubic-bezier(.4,0,.2,1)";
-        ltxt.style.transform = "translateY(0)";
-      }, 80);
-      let c = 0;
-      const iv = setInterval(() => {
-        c += ((Math.random() * 11) | 0) + 1;
-        if (c >= 100) {
-          c = 100;
-          clearInterval(iv);
-        }
-        lcnt.textContent = String(c).padStart(3, "0");
-        lbar.style.width = c + "%";
-      }, 55);
-      setTimeout(() => {
-        ldr.style.transition =
-          "opacity .75s ease,transform .75s cubic-bezier(.4,0,.2,1)";
-        ldr.style.opacity = "0";
-        ldr.style.transform = "translateY(-10px)";
-        setTimeout(() => {
-          ldr.style.display = "none";
-          heroIn();
-        }, 750);
-      }, 2100);
+    <!-- Gallery Lightbox Dialog -->
+    <dialog id="galleryDialog" class="sheet-dialog" aria-labelledby="dlgGalleryTitle">
+      <div class="dialog-head">
+        <div class="btn-row">
+          <button type="button" id="dlgGalleryPrev" class="btn btn-ghost btn-sm" aria-label="Previous artwork">← Prev</button>
+          <button type="button" id="dlgGalleryNext" class="btn btn-ghost btn-sm" aria-label="Next artwork">Next →</button>
+        </div>
+        <button type="button" id="dlgGalleryClose" class="icon-btn" aria-label="Close gallery lightbox">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <img
+          id="dlgGalleryImg"
+          class="dialog-media"
+          src="https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png?tr=w-1600,q-90,f-auto"
+          alt="Gallery artwork preview"
+        />
+        <div class="specimen-top">
+          <h2 id="dlgGalleryTitle" class="specimen-title" style="font-size: 1.35rem"></h2>
+          <span id="dlgGalleryCategory" class="chip chip-accent"></span>
+        </div>
+        <p id="dlgGalleryCaption" class="body-copy"></p>
+        <p id="dlgGalleryMeta" class="mono-meta"></p>
+      </div>
+    </dialog>
 
-      // Hero in
-      const hlines = document.querySelectorAll(".hero-title .line span"),
-        hbrow = document.querySelector(".hero-eyebrow span"),
-        hdesc = document.querySelector(".hero-desc span");
-      hlines.forEach((el) => (el.style.transform = "translateY(110%)"));
-      hbrow.style.cssText += "transform:translateY(20px);opacity:0;";
-      hdesc.style.cssText += "transform:translateY(20px);opacity:0;";
-      function heroIn() {
-        hbrow.style.transition =
-          "transform .7s cubic-bezier(.4,0,.2,1) .1s,opacity .7s ease .1s";
-        hbrow.style.transform = "translateY(0)";
-        hbrow.style.opacity = "1";
-        hlines.forEach((el, i) =>
-          setTimeout(
-            () => {
-              el.style.transition = "transform .9s cubic-bezier(.4,0,.2,1)";
-              el.style.transform = "translateY(0)";
-            },
-            190 + i * 130,
-          ),
-        );
-        setTimeout(() => {
-          hdesc.style.transition = "transform .8s ease,opacity .8s ease";
-          hdesc.style.transform = "translateY(0)";
-          hdesc.style.opacity = "1";
-        }, 680);
-      }
-
-      // Scroll reveal
-      const ro = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (!e.isIntersecting) return;
-            const el = e.target,
-              sibs = el.parentElement.querySelectorAll(".reveal,.reveal-l");
-            const i = Array.from(sibs).indexOf(el);
-            setTimeout(() => el.classList.add("visible"), i * 110);
-            ro.unobserve(el);
-          });
-        },
-        { threshold: 0.12 },
-      );
-      document
-        .querySelectorAll(".reveal,.reveal-l")
-        .forEach((el) => ro.observe(el));
-
-      // Skill bars
-      const bo = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (!e.isIntersecting) return;
-            e.target.querySelectorAll(".skill-bar").forEach((b, i) =>
-              setTimeout(
-                () => {
-                  b.style.transform = `scaleX(${b.dataset.level})`;
-                },
-                100 + i * 80,
-              ),
-            );
-            bo.unobserve(e.target);
-          });
-        },
-        { threshold: 0.25 },
-      );
-      document.querySelectorAll("#skills").forEach((el) => bo.observe(el));
-
-      // Project preview
-      const pprev = document.getElementById("projPreview"),
-        pcon = document.getElementById("previewContent");
-      document.querySelectorAll(".proj-row").forEach((row) => {
-        row.addEventListener("mouseenter", () => {
-          pcon.textContent = row.dataset.preview;
-          pcon.style.color = row.dataset.color;
-          pprev.style.boxShadow = `0 0 40px ${row.dataset.color}28`;
-          pprev.classList.add("visible");
-        });
-        row.addEventListener("mouseleave", () =>
-          pprev.classList.remove("visible"),
-        );
-        row.addEventListener("mousemove", (e) => {
-          pprev.style.left = e.clientX + 26 + "px";
-          pprev.style.top = e.clientY - 95 + "px";
-        });
-      });
-
-      // Parallax
-      const hbg = document.querySelector(".hero-bg-text");
-      window.addEventListener(
-        "scroll",
-        () => {
-          if (hbg)
-            hbg.style.transform = `translate(-50%,calc(-50% + ${scrollY * 0.14}px))`;
-        },
-        { passive: true },
-      );
-
-      // Navbar
-      const nav = document.getElementById("navbar");
-      window.addEventListener(
-        "scroll",
-        () => nav.classList.toggle("scrolled", scrollY > 60),
-        { passive: true },
-      );
-
-      // Counter
-      function countUp(el, target) {
-        let n = 0;
-        const t = setInterval(() => {
-          n = Math.min(n + target / 90, target);
-          el.textContent = Math.floor(n);
-          if (n >= target) clearInterval(t);
-        }, 16);
-      }
-      const so = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (!e.isIntersecting) return;
-            e.target.querySelectorAll(".stat-num").forEach((el) => {
-              const num = parseInt(el.textContent);
-              const suf = el.querySelector("span").outerHTML;
-              el.innerHTML = `0${suf}`;
-              countUp(el.firstChild, num);
-            });
-            so.unobserve(e.target);
-          });
-        },
-        { threshold: 0.5 },
-      );
-      const se = document.querySelector(".about-stats");
-      if (se) so.observe(se);
-
-      // Smooth scroll
-      document.querySelectorAll('a[href^="#"]').forEach((a) =>
-        a.addEventListener("click", (e) => {
-          const t = document.querySelector(a.getAttribute("href"));
-          if (t) {
-            e.preventDefault();
-            t.scrollIntoView({ behavior: "smooth" });
-          }
-        }),
-      );
-    </script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
