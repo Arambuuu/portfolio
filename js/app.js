@@ -81,6 +81,10 @@ function slugify(str) {
     .slice(0, 80);
 }
 
+function isUuid(val) {
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(String(val || ""));
+}
+
 // ---------- Theme (Light Mode First) ----------
 function initTheme() {
   const saved = localStorage.getItem(THEME_KEY);
@@ -1064,23 +1068,24 @@ async function moveProject(index, delta) {
 
   if (isSupabaseConfigured() && state.session?.access_token) {
     await Promise.all(
-      copy.map((p) =>
-        supabaseRequest(`/rest/v1/projects?id=eq.${encodeURIComponent(p.id)}`, {
-          method: "PATCH",
-          auth: true,
-          body: { sort_order: p.sort_order },
-        }),
-      ),
+      copy
+        .filter((p) => isUuid(p.id))
+        .map((p) =>
+          supabaseRequest(`/rest/v1/projects?id=eq.${encodeURIComponent(p.id)}`, {
+            method: "PATCH",
+            auth: true,
+            body: { sort_order: p.sort_order },
+          }),
+        ),
     );
-  } else {
-    writeLocalStore(LOCAL_PROJ_KEY, state.projects);
   }
+  writeLocalStore(LOCAL_PROJ_KEY, state.projects);
   renderAll();
 }
 
 async function deleteProject(project) {
   if (!window.confirm(`Delete project "${project.title}"?`)) return;
-  if (isSupabaseConfigured() && state.session?.access_token && !String(project.id).startsWith("seed-")) {
+  if (isSupabaseConfigured() && state.session?.access_token && isUuid(project.id)) {
     await supabaseRequest(`/rest/v1/projects?id=eq.${encodeURIComponent(project.id)}`, {
       method: "DELETE",
       auth: true,
@@ -1093,7 +1098,7 @@ async function deleteProject(project) {
 
 async function deleteGalleryItem(item) {
   if (!window.confirm(`Delete gallery item "${item.title}"?`)) return;
-  if (isSupabaseConfigured() && state.session?.access_token && !String(item.id).startsWith("seed-")) {
+  if (isSupabaseConfigured() && state.session?.access_token && isUuid(item.id)) {
     await supabaseRequest(`/rest/v1/gallery_items?id=eq.${encodeURIComponent(item.id)}`, {
       method: "DELETE",
       auth: true,
@@ -1105,7 +1110,7 @@ async function deleteGalleryItem(item) {
 }
 
 async function deleteMessage(msg) {
-  if (isSupabaseConfigured() && state.session?.access_token) {
+  if (isSupabaseConfigured() && state.session?.access_token && isUuid(msg.id)) {
     await supabaseRequest(`/rest/v1/contact_messages?id=eq.${encodeURIComponent(msg.id)}`, {
       method: "DELETE",
       auth: true,
@@ -1285,7 +1290,7 @@ function initCms() {
 
     try {
       if (isSupabaseConfigured() && state.session?.access_token) {
-        if (id && !id.startsWith("seed-")) {
+        if (isUuid(id)) {
           const updated = await supabaseRequest(
             `/rest/v1/projects?id=eq.${encodeURIComponent(id)}`,
             { method: "PATCH", auth: true, prefer: "return=representation", body: payload },
@@ -1298,7 +1303,11 @@ function initCms() {
             prefer: "return=representation",
             body: payload,
           });
-          state.projects.push(created[0]);
+          if (id) {
+            state.projects = state.projects.map((p) => (p.id === id ? created[0] : p));
+          } else {
+            state.projects.push(created[0]);
+          }
         }
       } else {
         const entry = { ...payload, id: id || `local-${crypto.randomUUID()}` };
@@ -1307,8 +1316,8 @@ function initCms() {
         } else {
           state.projects.push(entry);
         }
-        writeLocalStore(LOCAL_PROJ_KEY, state.projects);
       }
+      writeLocalStore(LOCAL_PROJ_KEY, state.projects);
       resetProjectForm();
       syncProjPreview();
       showNotice(fb, "Project saved.", "ok");
@@ -1348,7 +1357,7 @@ function initCms() {
 
     try {
       if (isSupabaseConfigured() && state.session?.access_token) {
-        if (id && !id.startsWith("seed-")) {
+        if (isUuid(id)) {
           const updated = await supabaseRequest(
             `/rest/v1/gallery_items?id=eq.${encodeURIComponent(id)}`,
             { method: "PATCH", auth: true, prefer: "return=representation", body: payload },
@@ -1361,7 +1370,11 @@ function initCms() {
             prefer: "return=representation",
             body: payload,
           });
-          state.gallery.push(created[0]);
+          if (id) {
+            state.gallery = state.gallery.map((g) => (g.id === id ? created[0] : g));
+          } else {
+            state.gallery.push(created[0]);
+          }
         }
       } else {
         const entry = { ...payload, id: id || `local-${crypto.randomUUID()}` };
@@ -1370,8 +1383,8 @@ function initCms() {
         } else {
           state.gallery.push(entry);
         }
-        writeLocalStore(LOCAL_GAL_KEY, state.gallery);
       }
+      writeLocalStore(LOCAL_GAL_KEY, state.gallery);
       resetGalleryForm();
       syncGalPreview();
       showNotice(fb, "Gallery item saved.", "ok");

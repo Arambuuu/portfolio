@@ -100,4 +100,14 @@ const expectedSig = crypto
   .digest("hex");
 assert.equal(r200.body.signature, expectedSig);
 
+// 7. Verify UUID regex validation guards against local- and seed- prefixed IDs
+function isUuid(val) {
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(String(val || ""));
+}
+assert.equal(isUuid("7d62679c-0e68-4609-96b0-f8d3fc7fa764"), true);
+assert.equal(isUuid("local-7d62679c-0e68-4609-96b0-f8d3fc7fa764"), false);
+assert.equal(isUuid("seed-proj-1"), false);
+assert.equal(isUuid(""), false);
+assert.equal(isUuid(null), false);
+
 console.log("ALL PORTFOLIO & CMS CHECKS PASSED");
