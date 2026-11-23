@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T08:00:00Z",
+  "title": "Design System: Arambuuu Portfolio & CMS",
+  "extensions": {
+    "colorMeta": {
+      "cobalt-archival": {
+        "role": "primary",
+        "displayName": "Cobalt Archival",
+        "canonical": "#1E40AF",
+        "tonalRamp": ["#0D1C4D", "#152B75", "#1E40AF", "#3B60D4", "#6889E8", "#9DB5F2", "#C9D8F8", "#E8EEF9"]
+      },
+      "archival-paper": {
+        "role": "neutral",
+        "displayName": "Archival Paper",
+        "canonical": "#F7F6F2",
+        "tonalRamp": ["#141413", "#2E2D29", "#4A4843", "#66635C", "#9A968C", "#C4BFB4", "#DDD9D0", "#F7F6F2"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home thesis headline only." },
+      "headline": { "displayName": "Headline", "purpose": "Primary page headings." },
+      "title": { "displayName": "Title", "purpose": "Section headings across views." },
+      "body": { "displayName": "Body", "purpose": "Editorial copy and case study prose." },
+      "label": { "displayName": "Label", "purpose": "Metadata, dates, and technical specs." }
+    },
+    "shadows": [
+      {
+        "name": "shadow-lift",
+        "value": "0 10px 28px rgba(20, 20, 19, 0.08)",
+        "purpose": "Subtle hover lift for gallery cards and modal dialog sheets."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Exponential deceleration for route fades and image hover scale."
+      }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "960px" },
+      { "name": "mobile", "value": "780px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call to action and form submission trigger.",
+      "html": "<button class=\"ds-btn-primary\">Explore Projects</button>",
+      "css": ".ds-btn-primary { background: var(--ink, #141413); color: var(--paper, #f7f6f2); padding: 10px 18px; border-radius: 4px; border: 1px solid transparent; font-weight: 600; font-size: 0.875rem; cursor: pointer; transition: background-color 0.18s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: var(--accent, #1e40af); color: #ffffff; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting action on paper and stone surfaces.",
+      "html": "<button class=\"ds-btn-secondary\">Start a Conversation</button>",
+      "css": ".ds-btn-secondary { background: var(--surface-pure, #ffffff); color: var(--ink, #141413); padding: 10px 18px; border-radius: 4px; border: 1px solid var(--rule-strong, #c4bfb4); font-weight: 600; font-size: 0.875rem; cursor: pointer; } .ds-btn-secondary:hover { background: var(--surface, #efece6); border-color: var(--ink, #141413); }"
+    },
+    {
+      "name": "Accent Chip",
+      "kind": "chip",
+      "refersTo": "chip-accent",
+      "description": "Category tag on featured specimens and project ledger rows.",
+      "html": "<span class=\"ds-chip-accent\">Web Dev</span>",
+      "css": ".ds-chip-accent { display: inline-block; font-family: monospace; font-size: 0.72rem; padding: 3px 9px; border-radius: 4px; background: var(--accent-soft, #e8eef9); color: var(--accent, #1e40af); border: 1px solid rgba(30, 64, 175, 0.25); }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-default",
+      "description": "Form input for search, contact inquiries, and CMS editing.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"Client Portal Redesign\" />",
+      "css": ".ds-input { width: 100%; padding: 9px 12px; border: 1px solid var(--rule-strong, #c4bfb4); border-radius: 4px; background: var(--paper, #f7f6f2); color: var(--ink, #141413); font-size: 0.9rem; } .ds-input:focus { outline: none; border-color: var(--accent, #1e40af); background: var(--surface-pure, #ffffff); }"
+    },
+    {
+      "name": "Gallery Card",
+      "kind": "card",
+      "refersTo": "card-gallery",
+      "description": "Framed visual artwork card opening the lightbox dialog.",
+      "html": "<article class=\"ds-gallery-card\"><div class=\"ds-gallery-body\"><strong>Arambuuu Studio Monogram</strong><span>Branding · 2026</span></div></article>",
+      "css": ".ds-gallery-card { border: 1px solid var(--rule, #ddd9d0); border-radius: 8px; background: var(--surface-pure, #ffffff); overflow: hidden; } .ds-gallery-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; color: var(--ink, #141413); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Daylight Studio Monograph",
+    "overview": "This design system treats a multidisciplinary developer-designer portfolio and its built-in CMS like a clean architectural monograph printed on warm uncoated paper. Light mode is the primary surface, relying on generous whitespace, crisp 1px rules, and unembellished ImageKit imagery so real projects and gallery works command attention from the first viewport.",
+    "keyCharacteristics": [
+      "Light-mode-first warm paper ground (#F7F6F2) with optional dark mode (#121210)",
+      "Self-hosted display, UI, and monospace typography with zero third-party font stylesheets",
+      "Single-pixel hairline boundaries (#DDD9D0) separating ledgers, tables, and specimens",
+      "Native <dialog> case-study sheets and gallery lightbox with keyboard navigation"
+    ],
+    "rules": [
+      {
+        "name": "The Light-First Ink Rule",
+        "body": "Default to warm archival paper (#F7F6F2) and dark graphite ink (#141413); reserve cobalt (#1E40AF) strictly for interactive affordances, active page states, and featured tags.",
+        "section": "colors"
+      },
+      {
+        "name": "The Self-Contained Heading Rule",
+        "body": "Headings speak on their own without eyebrow kickers or section numbers above them, keeping more vertical space above each heading than below it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline-First Rule",
+        "body": "Separate regions with 1px rules and tonal contrast before reaching for shadows; never use hard zero-blur offset block shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do deliver all ImageKit images with ?tr=w-...,q-80,f-auto transforms to protect free-tier bandwidth.",
+      "Do keep ::selection, caret-color, :focus-visible, and scrollbars themed to the paper/cobalt palette.",
+      "Do build dynamic DOM nodes with document.createElement and textContent rather than innerHTML."
+    ],
+    "donts": [
+      "Don't add eyebrow kickers or numeric prefixes (01, 02) above headings.",
+      "Don't use gradient text, blurred ambient orbs, or identical icon-card grids.",
+      "Don't ship external Google Fonts stylesheets or place private API keys in client-side code."
+    ]
+  }
+}

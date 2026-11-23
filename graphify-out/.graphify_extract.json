@@ -1,0 +1,3822 @@
+{
+  "nodes": [
+    {
+      "id": "github_workflows_static",
+      "label": "static.yml",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_on",
+      "label": "on",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_on_push",
+      "label": "push",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_push_branches",
+      "label": "branches",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_on_workflow_dispatch",
+      "label": "workflow_dispatch",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_permissions",
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_permissions_contents",
+      "label": "contents",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_permissions_pages",
+      "label": "pages",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_permissions_id_token",
+      "label": "id-token",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_concurrency",
+      "label": "concurrency",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_concurrency_group",
+      "label": "group",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_concurrency_cancel_in_progress",
+      "label": "cancel-in-progress",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_jobs",
+      "label": "jobs",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_jobs_deploy",
+      "label": "deploy",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_deploy_environment",
+      "label": "environment",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_environment_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_environment_url",
+      "label": "url",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_deploy_runs_on",
+      "label": "runs-on",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_deploy_steps",
+      "label": "steps",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_steps_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_steps_uses",
+      "label": "uses",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_steps_with",
+      "label": "with",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_with_path",
+      "label": "path",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "github_workflows_static_steps_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_imagekit_auth",
+      "label": "imagekit-auth.js",
+      "file_type": "code",
+      "source_file": "api/imagekit-auth.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_imagekit_auth_handler",
+      "label": "handler()",
+      "file_type": "code",
+      "source_file": "api/imagekit-auth.js",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app",
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_routes",
+      "label": "ROUTES",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_state",
+      "label": "state",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_el",
+      "label": "el()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L42",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_clearnode",
+      "label": "clearNode()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_shownotice",
+      "label": "showNotice()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L67",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_slugify",
+      "label": "slugify()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_inittheme",
+      "label": "initTheme()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L85",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_loadsession",
+      "label": "loadSession()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L105",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_savesession",
+      "label": "saveSession()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L117",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_supabaserequest",
+      "label": "supabaseRequest()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L126",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_signinwithsupabase",
+      "label": "signInWithSupabase()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L164",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_signoutsupabase",
+      "label": "signOutSupabase()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L173",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_readlocalstore",
+      "label": "readLocalStore()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L187",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_writelocalstore",
+      "label": "writeLocalStore()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L200",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_loadportfoliodata",
+      "label": "loadPortfolioData()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L204",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_setroute",
+      "label": "setRoute()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L243",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_initrouter",
+      "label": "initRouter()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L279",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_getpublishedprojects",
+      "label": "getPublishedProjects()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L296",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_getpublishedgallery",
+      "label": "getPublishedGallery()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L300",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_renderhomespecimen",
+      "label": "renderHomeSpecimen()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L304",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_buildprojectrow",
+      "label": "buildProjectRow()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L356",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_buildgallerycard",
+      "label": "buildGalleryCard()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L398",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_renderhome",
+      "label": "renderHome()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L436",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_renderabout",
+      "label": "renderAbout()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L458",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_renderprojectspage",
+      "label": "renderProjectsPage()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L497",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_rendertoolspage",
+      "label": "renderToolsPage()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L560",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_openprojectdialog",
+      "label": "openProjectDialog()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L599",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_opengallerydialog",
+      "label": "openGalleryDialog()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L627",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_initdialogs",
+      "label": "initDialogs()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L651",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_initcontactform",
+      "label": "initContactForm()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L676",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_updatecmsgate",
+      "label": "updateCmsGate()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L747",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_uploadfiletoimagekit",
+      "label": "uploadFileToImageKit()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L778",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_bindimagepreviewinput",
+      "label": "bindImagePreviewInput()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L834",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_rendercmslists",
+      "label": "renderCmsLists()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L848",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_rendercmssettings",
+      "label": "renderCmsSettings()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L974",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_populateprojectform",
+      "label": "populateProjectForm()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L995",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_resetprojectform",
+      "label": "resetProjectForm()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1016",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_populategalleryform",
+      "label": "populateGalleryForm()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1026",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_resetgalleryform",
+      "label": "resetGalleryForm()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1043",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_moveproject",
+      "label": "moveProject()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1053",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_deleteproject",
+      "label": "deleteProject()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1080",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_deletegalleryitem",
+      "label": "deleteGalleryItem()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1093",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_deletemessage",
+      "label": "deleteMessage()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1106",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_initcms",
+      "label": "initCms()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1118",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_renderall",
+      "label": "renderAll()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1406",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_app_boot",
+      "label": "boot()",
+      "file_type": "code",
+      "source_file": "js/app.js",
+      "source_location": "L1415",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config",
+      "label": "config.js",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_default_config",
+      "label": "DEFAULT_CONFIG",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_getruntimeconfig",
+      "label": "getRuntimeConfig()",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_saveruntimeconfig",
+      "label": "saveRuntimeConfig()",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_clearruntimeconfig",
+      "label": "clearRuntimeConfig()",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_issupabaseconfigured",
+      "label": "isSupabaseConfigured()",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L62",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_sanitizeurl",
+      "label": "sanitizeUrl()",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_config_buildimagekiturl",
+      "label": "buildImageKitUrl()",
+      "file_type": "code",
+      "source_file": "js/config.js",
+      "source_location": "L84",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data",
+      "label": "seed-data.js",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data_owner_profile",
+      "label": "OWNER_PROFILE",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data_seed_projects",
+      "label": "SEED_PROJECTS",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data_seed_gallery",
+      "label": "SEED_GALLERY",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L111",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data_experience_list",
+      "label": "EXPERIENCE_LIST",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L138",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data_education_record",
+      "label": "EDUCATION_RECORD",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L167",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_seed_data_tools_inventory",
+      "label": "TOOLS_INVENTORY",
+      "file_type": "code",
+      "source_file": "js/seed-data.js",
+      "source_location": "L174",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify",
+      "label": "verify.mjs",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_root",
+      "label": "root",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_html",
+      "label": "html",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_css",
+      "label": "css",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_sql",
+      "label": "sql",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_appjs",
+      "label": "appJs",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_transformed",
+      "label": "transformed",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_mockres",
+      "label": "mockRes()",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_r401",
+      "label": "r401",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L82",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_r200",
+      "label": "r200",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L91",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_verify_expectedsig",
+      "label": "expectedSig",
+      "file_type": "code",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L97",
+      "_origin": "ast"
+    },
+    {
+      "id": "vercel",
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "vercel_schema",
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "vercel_cleanurls",
+      "label": "cleanUrls",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "vercel_headers",
+      "label": "headers",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "doc_product_md",
+      "label": "PRODUCT.md",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "sec:Product",
+      "_origin": "semantic"
+    },
+    {
+      "id": "doc_design_md",
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "sec:DesignSystem",
+      "_origin": "semantic"
+    },
+    {
+      "id": "doc_surface_brief",
+      "label": "Surface Brief (index.html)",
+      "file_type": "document",
+      "source_file": ".impeccable/surfaces/index-html.md",
+      "source_location": "sec:DirectionContract",
+      "_origin": "semantic"
+    },
+    {
+      "id": "doc_index_html",
+      "label": "Portfolio & CMS Shell (index.html)",
+      "file_type": "document",
+      "source_file": "index.html",
+      "source_location": "sec:Pages",
+      "_origin": "semantic"
+    },
+    {
+      "id": "concept_supabase_rls",
+      "label": "Supabase DB & RLS Schema",
+      "file_type": "document",
+      "source_file": "supabase/schema.sql",
+      "source_location": "sec:RLS",
+      "_origin": "semantic"
+    },
+    {
+      "id": "concept_imagekit_cdn",
+      "label": "ImageKit Media CDN & Transforms",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "sec:Stack",
+      "_origin": "semantic"
+    }
+  ],
+  "edges": [
+    {
+      "source": "github_workflows_static",
+      "target": "github_workflows_static_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static",
+      "target": "github_workflows_static_on",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_on",
+      "target": "github_workflows_static_on_push",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_on_push",
+      "target": "github_workflows_static_push_branches",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_on",
+      "target": "github_workflows_static_on_workflow_dispatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static",
+      "target": "github_workflows_static_permissions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_permissions",
+      "target": "github_workflows_static_permissions_contents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_permissions",
+      "target": "github_workflows_static_permissions_pages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_permissions",
+      "target": "github_workflows_static_permissions_id_token",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static",
+      "target": "github_workflows_static_concurrency",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_concurrency",
+      "target": "github_workflows_static_concurrency_group",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_concurrency",
+      "target": "github_workflows_static_concurrency_cancel_in_progress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static",
+      "target": "github_workflows_static_jobs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_jobs",
+      "target": "github_workflows_static_jobs_deploy",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_jobs_deploy",
+      "target": "github_workflows_static_deploy_environment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_environment",
+      "target": "github_workflows_static_environment_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_environment",
+      "target": "github_workflows_static_environment_url",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_jobs_deploy",
+      "target": "github_workflows_static_deploy_runs_on",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_jobs_deploy",
+      "target": "github_workflows_static_deploy_steps",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_uses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_uses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_uses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_with",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_steps_with",
+      "target": "github_workflows_static_with_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_id",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "github_workflows_static_deploy_steps",
+      "target": "github_workflows_static_steps_uses",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/static.yml",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_imagekit_auth",
+      "target": "ref_node_crypto",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/imagekit-auth.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_imagekit_auth",
+      "target": "api_imagekit_auth_handler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/imagekit-auth.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config_getruntimeconfig",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config_saveruntimeconfig",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config_clearruntimeconfig",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config_sanitizeurl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_config_buildimagekiturl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data_owner_profile",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data_seed_projects",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data_seed_gallery",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data_experience_list",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data_education_record",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_seed_data_tools_inventory",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_routes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_state",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_el",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_clearnode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_shownotice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_slugify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_inittheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_loadsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_savesession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_supabaserequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_signinwithsupabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_signoutsupabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_readlocalstore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_writelocalstore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_loadportfoliodata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L204",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_setroute",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L243",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_initrouter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L279",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_getpublishedprojects",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L296",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_getpublishedgallery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_renderhomespecimen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L304",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_buildprojectrow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L356",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_buildgallerycard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L398",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_renderhome",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L436",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_renderabout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L458",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_renderprojectspage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L497",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_rendertoolspage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L560",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_openprojectdialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L599",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_opengallerydialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L627",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_initdialogs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L651",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_initcontactform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L676",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_updatecmsgate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L747",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_uploadfiletoimagekit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L778",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_bindimagepreviewinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L834",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_rendercmslists",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L848",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_rendercmssettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L974",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_populateprojectform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L995",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_resetprojectform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1016",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_populategalleryform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1026",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_resetgalleryform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1043",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_moveproject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1053",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_deleteproject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1080",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_deletegalleryitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1093",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_deletemessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_initcms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1118",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_renderall",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1406",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app",
+      "target": "js_app_boot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1415",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_shownotice",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_shownotice",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_supabaserequest",
+      "target": "js_app_savesession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_supabaserequest",
+      "target": "js_app_updatecmsgate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_signinwithsupabase",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_signinwithsupabase",
+      "target": "js_app_savesession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_signoutsupabase",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_signoutsupabase",
+      "target": "js_app_savesession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_loadportfoliodata",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_loadportfoliodata",
+      "target": "js_app_renderall",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L225",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_loadportfoliodata",
+      "target": "js_app_readlocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_setroute",
+      "target": "js_app_updatecmsgate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initrouter",
+      "target": "js_app_setroute",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L282",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhomespecimen",
+      "target": "js_app_getpublishedprojects",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L305",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhomespecimen",
+      "target": "js_app_openprojectdialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L327",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhomespecimen",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L338",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhomespecimen",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L341",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhomespecimen",
+      "target": "js_app_renderhomespecimen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L349",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_buildprojectrow",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L358",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_buildprojectrow",
+      "target": "js_app_openprojectdialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L365",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_buildgallerycard",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L399",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_buildgallerycard",
+      "target": "js_app_opengallerydialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L408",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_renderhomespecimen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L437",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L440",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_getpublishedprojects",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L441",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L443",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_buildprojectrow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L445",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_getpublishedgallery",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L450",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhome",
+      "target": "js_app_buildgallerycard",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L454",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderabout",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L460",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderabout",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L463",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L500",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L503",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_renderprojectspage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L510",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_getpublishedprojects",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L517",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_buildprojectrow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L532",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_getpublishedgallery",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L535",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderprojectspage",
+      "target": "js_app_buildgallerycard",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L555",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendertoolspage",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L563",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendertoolspage",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L566",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendertoolspage",
+      "target": "js_app_rendertoolspage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L573",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_openprojectdialog",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L613",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_openprojectdialog",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L614",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_opengallerydialog",
+      "target": "js_app_getpublishedgallery",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L628",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initdialogs",
+      "target": "js_app_opengallerydialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L661",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcontactform",
+      "target": "js_app_shownotice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L683",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcontactform",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L708",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcontactform",
+      "target": "js_app_readlocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L714",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcontactform",
+      "target": "js_app_writelocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L724",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_updatecmsgate",
+      "target": "js_app_rendercmslists",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L773",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_updatecmsgate",
+      "target": "js_app_rendercmssettings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L774",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L851",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L854",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_moveproject",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L876",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_populateprojectform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L890",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_deleteproject",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L896",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_populategalleryform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L928",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_deletegalleryitem",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L934",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_app_deletemessage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L965",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmssettings",
+      "target": "js_app_clearnode",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L977",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmssettings",
+      "target": "js_app_el",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L987",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_populateprojectform",
+      "target": "js_app_slugify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L999",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_resetprojectform",
+      "target": "js_app_shownotice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1023",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_resetgalleryform",
+      "target": "js_app_shownotice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1050",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_moveproject",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1067",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_moveproject",
+      "target": "js_app_writelocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1075",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_moveproject",
+      "target": "js_app_renderall",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1077",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deleteproject",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1083",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deleteproject",
+      "target": "js_app_writelocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1089",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deleteproject",
+      "target": "js_app_renderall",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1090",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletegalleryitem",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1096",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletegalleryitem",
+      "target": "js_app_writelocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletegalleryitem",
+      "target": "js_app_renderall",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1103",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletemessage",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletemessage",
+      "target": "js_app_writelocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletemessage",
+      "target": "js_app_rendercmslists",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_shownotice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_signinwithsupabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_loadportfoliodata",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1139",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_updatecmsgate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_signoutsupabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_savesession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1176",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_slugify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1200",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_bindimagepreviewinput",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1203",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_uploadfiletoimagekit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1214",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_resetprojectform",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "js/app.js",
+      "source_location": "L1230",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_resetgalleryform",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "js/app.js",
+      "source_location": "L1231",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_supabaserequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1279",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_writelocalstore",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1300",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_resetprojectform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1302",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_renderall",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1305",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_app_resetgalleryform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1365",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderall",
+      "target": "js_app_renderhome",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1407",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderall",
+      "target": "js_app_renderabout",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1408",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderall",
+      "target": "js_app_renderprojectspage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1409",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderall",
+      "target": "js_app_rendertoolspage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1410",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderall",
+      "target": "js_app_updatecmsgate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1411",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_loadsession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1416",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_inittheme",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1417",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_initrouter",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1418",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_initdialogs",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1419",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_initcontactform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1420",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_initcms",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1421",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_renderprojectspage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1425",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_boot",
+      "target": "js_app_loadportfoliodata",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1428",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_default_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_getruntimeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_saveruntimeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_clearruntimeconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_sanitizeurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config",
+      "target": "js_config_buildimagekiturl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config_saveruntimeconfig",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config_buildimagekiturl",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_config_buildimagekiturl",
+      "target": "js_config_sanitizeurl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/config.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_seed_data",
+      "target": "js_seed_data_owner_profile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/seed-data.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_seed_data",
+      "target": "js_seed_data_seed_projects",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/seed-data.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_seed_data",
+      "target": "js_seed_data_seed_gallery",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/seed-data.js",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_seed_data",
+      "target": "js_seed_data_experience_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/seed-data.js",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_seed_data",
+      "target": "js_seed_data_education_record",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/seed-data.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_seed_data",
+      "target": "js_seed_data_tools_inventory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/seed-data.js",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "ref_node_assert",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "ref_node_fs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "ref_node_path",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "ref_node_crypto",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "js_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "js_config_buildimagekiturl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "js_config_sanitizeurl",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "api_imagekit_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_root",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_html",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_css",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_sql",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_appjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_transformed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_mockres",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_r401",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_r200",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "tests_verify_expectedsig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_schema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_cleanurls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "vercel",
+      "target": "vercel_headers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_verify",
+      "target": "api_imagekit_auth_handler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/verify.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_supabaserequest",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_supabaserequest",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_signoutsupabase",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_loadportfoliodata",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L205",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_loadportfoliodata",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L206",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_renderhomespecimen",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L320",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_buildprojectrow",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L376",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_buildgallerycard",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L417",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_openprojectdialog",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L609",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_openprojectdialog",
+      "target": "js_config_sanitizeurl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L617",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_opengallerydialog",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L635",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcontactform",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L707",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_updatecmsgate",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L748",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_updatecmsgate",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L749",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_uploadfiletoimagekit",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L805",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_uploadfiletoimagekit",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L826",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_bindimagepreviewinput",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L836",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmslists",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L858",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_rendercmssettings",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L975",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_populateprojectform",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1011",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_populategalleryform",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1038",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_moveproject",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1064",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deleteproject",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1082",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletegalleryitem",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1095",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_deletemessage",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_config_issupabaseconfigured",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_config_saveruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1163",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_config_clearruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1175",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_config_buildimagekiturl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1238",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_config_sanitizeurl",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1248",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "js_app_initcms",
+      "target": "js_config_getruntimeconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/app.js",
+      "source_location": "L1390",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "doc_product_md",
+      "target": "doc_surface_brief",
+      "relation": "constrains",
+      "confidence": "EXTRACTED",
+      "source_file": ".impeccable/surfaces/index-html.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_surface_brief",
+      "target": "doc_design_md",
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_design_md",
+      "target": "doc_index_html",
+      "relation": "governs",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_product_md",
+      "target": "concept_supabase_rls",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_product_md",
+      "target": "concept_imagekit_cdn",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_index_html",
+      "target": "concept_supabase_rls",
+      "relation": "connects_to",
+      "confidence": "INFERRED",
+      "source_file": "index.html",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_index_html",
+      "target": "concept_imagekit_cdn",
+      "relation": "loads_from",
+      "confidence": "EXTRACTED",
+      "source_file": "index.html",
+      "_origin": "semantic"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

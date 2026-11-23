@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "doc_product_md",
+      "label": "PRODUCT.md",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "sec:Product",
+      "_origin": "semantic"
+    },
+    {
+      "id": "doc_design_md",
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "sec:DesignSystem",
+      "_origin": "semantic"
+    },
+    {
+      "id": "doc_surface_brief",
+      "label": "Surface Brief (index.html)",
+      "file_type": "document",
+      "source_file": ".impeccable/surfaces/index-html.md",
+      "source_location": "sec:DirectionContract",
+      "_origin": "semantic"
+    },
+    {
+      "id": "doc_index_html",
+      "label": "Portfolio & CMS Shell (index.html)",
+      "file_type": "document",
+      "source_file": "index.html",
+      "source_location": "sec:Pages",
+      "_origin": "semantic"
+    },
+    {
+      "id": "concept_supabase_rls",
+      "label": "Supabase DB & RLS Schema",
+      "file_type": "document",
+      "source_file": "supabase/schema.sql",
+      "source_location": "sec:RLS",
+      "_origin": "semantic"
+    },
+    {
+      "id": "concept_imagekit_cdn",
+      "label": "ImageKit Media CDN & Transforms",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "sec:Stack",
+      "_origin": "semantic"
+    }
+  ],
+  "edges": [
+    {
+      "source": "doc_product_md",
+      "target": "doc_surface_brief",
+      "relation": "constrains",
+      "confidence": "EXTRACTED",
+      "source_file": ".impeccable/surfaces/index-html.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_surface_brief",
+      "target": "doc_design_md",
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_design_md",
+      "target": "doc_index_html",
+      "relation": "governs",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_product_md",
+      "target": "concept_supabase_rls",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_product_md",
+      "target": "concept_imagekit_cdn",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_index_html",
+      "target": "concept_supabase_rls",
+      "relation": "connects_to",
+      "confidence": "INFERRED",
+      "source_file": "index.html",
+      "_origin": "semantic"
+    },
+    {
+      "source": "doc_index_html",
+      "target": "concept_imagekit_cdn",
+      "relation": "loads_from",
+      "confidence": "EXTRACTED",
+      "source_file": "index.html",
+      "_origin": "semantic"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
