@@ -168,4 +168,16 @@ assert.equal(OWNER_PROFILE.portraitUrl, "./assets/profile.jpg");
 assert.equal(buildImageKitUrl(OWNER_PROFILE.portraitUrl), "./assets/profile.jpg");
 assert.ok(fs.statSync(path.join(root, "assets", "profile.jpg")).size > 0);
 
+// 9. Verify responsive layout invariants across HTML, CSS, and JS
+assert.ok(html.includes("viewport-fit=cover"), "Viewport meta must include viewport-fit=cover");
+assert.ok(css.includes("minmax(min(100%"), "Gallery grid must clamp min track width for 320px viewports");
+assert.ok(css.includes("@media (hover: none)"), "Gallery captions must remain visible on non-hover touch devices");
+assert.ok(css.includes("@media (pointer: coarse)"), "Coarse pointer touch targets must be defined");
+assert.ok(css.includes("attr(data-label)"), "Mobile tools cards must render data-label headers");
+assert.ok(appJs.includes('"data-label"'), "renderToolsPage must emit data-label attributes");
+assert.ok(
+  !/\.project-row\s+\.chip-group,\s*\.project-row\s+\.project-open-label\s*\{\s*display:\s*none;/.test(css),
+  "Mobile project rows must reflow rather than hide chips and year",
+);
+
 console.log("ALL PORTFOLIO & CMS CHECKS PASSED");
