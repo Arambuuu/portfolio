@@ -410,41 +410,47 @@ function buildProjectRow(project) {
 }
 
 function buildGalleryCard(item, indexInList) {
-  return el("article", { class: "gallery-card" }, [
-    el(
-      "div",
-      {
-        class: "gallery-media",
-        "data-ratio": item.aspect_ratio || "4/3",
-        role: "button",
-        tabindex: "0",
-        "aria-label": `View ${item.title} in lightbox`,
-        onClick: () => openGalleryDialog(indexInList),
-        onKeydown: (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            openGalleryDialog(indexInList);
-          }
-        },
+  return el(
+    "article",
+    {
+      class: "gallery-card",
+      role: "button",
+      tabindex: "0",
+      "aria-label": `View ${item.title} in lightbox`,
+      onClick: () => openGalleryDialog(indexInList),
+      onKeydown: (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openGalleryDialog(indexInList);
+        }
       },
-      el("img", {
-        src: buildImageKitUrl(item.image_url, { width: 720, quality: 80 }),
-        alt: item.title,
-        loading: "lazy",
-      }),
-    ),
-    el("div", { class: "gallery-info" }, [
-      el("div", { class: "specimen-top" }, [
-        el("h3", { class: "gallery-title", text: item.title }),
-        el("span", { class: "chip", text: item.category }),
+    },
+    [
+      el(
+        "div",
+        {
+          class: "gallery-media",
+          "data-ratio": item.aspect_ratio || "4/3",
+        },
+        el("img", {
+          src: buildImageKitUrl(item.image_url, { width: 720, quality: 80 }),
+          alt: item.title,
+          loading: "lazy",
+        }),
+      ),
+      el("div", { class: "gallery-info" }, [
+        el("div", { class: "specimen-top" }, [
+          el("h3", { class: "gallery-title", text: item.title }),
+          el("span", { class: "chip", text: item.category }),
+        ]),
+        item.caption ? el("p", { class: "gallery-caption", text: item.caption }) : null,
+        el("div", {
+          class: "mono-meta",
+          text: [item.tool_used, item.year].filter(Boolean).join(" · "),
+        }),
       ]),
-      item.caption ? el("p", { class: "gallery-caption", text: item.caption }) : null,
-      el("div", {
-        class: "mono-meta",
-        text: [item.tool_used, item.year].filter(Boolean).join(" · "),
-      }),
-    ]),
-  ]);
+    ],
+  );
 }
 
 function renderHome() {
