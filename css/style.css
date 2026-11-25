@@ -1108,6 +1108,16 @@ textarea {
   color: var(--ink-muted);
 }
 
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: var(--signal-err);
+}
+
+.field-error {
+  font-size: 0.78rem;
+  color: var(--signal-err);
+}
+
 .notice {
   padding: 12px 14px;
   border-radius: var(--radius-sm);

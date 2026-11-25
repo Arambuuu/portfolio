@@ -283,7 +283,18 @@
                 </div>
                 <div class="field">
                   <label for="contactEmail">Email Address</label>
-                  <input type="email" id="contactEmail" name="sender_email" required maxlength="180" placeholder="jane@studio.com" />
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="sender_email"
+                    required
+                    maxlength="180"
+                    inputmode="email"
+                    autocomplete="email"
+                    aria-describedby="contactEmailError"
+                    placeholder="jane@studio.com"
+                  />
+                  <span id="contactEmailError" class="field-error" role="alert" hidden></span>
                 </div>
               </div>
 

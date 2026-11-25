@@ -734,39 +734,83 @@ function initDialogs() {
 }
 
 // ---------- Contact Form ----------
+function isValidEmail(email) {
+  const value = String(email || "").trim();
+  if (value.length < 3 || value.length > 180) return false;
+  return /^[^\s@]+@(?:[^\s@.]+\.)+[^\s@.]{2,}$/.test(value);
+}
+
 function initContactForm() {
   const form = document.getElementById("contactForm");
   const feedback = document.getElementById("contactFeedback");
   const submitBtn = document.getElementById("contactSubmitBtn");
+  const emailInput = document.getElementById("contactEmail");
+  const emailError = document.getElementById("contactEmailError");
+
+  const setEmailError = (msg) => {
+    if (!emailInput || !emailError) return;
+    if (msg) {
+      emailInput.setAttribute("aria-invalid", "true");
+      emailError.textContent = msg;
+      emailError.hidden = false;
+    } else {
+      emailInput.removeAttribute("aria-invalid");
+      emailError.textContent = "";
+      emailError.hidden = true;
+    }
+  };
+
+  emailInput?.addEventListener("blur", () => {
+    const val = emailInput.value.trim();
+    if (val && !isValidEmail(val)) {
+      setEmailError("Please enter a valid email address (e.g. name@example.com).");
+    } else {
+      setEmailError("");
+    }
+  });
+
+  emailInput?.addEventListener("input", () => {
+    if (
+      emailInput.getAttribute("aria-invalid") === "true" &&
+      (!emailInput.value.trim() || isValidEmail(emailInput.value))
+    ) {
+      setEmailError("");
+    }
+  });
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
     showNotice(feedback, "");
+    setEmailError("");
 
     // Honeypot check
     const trap = document.getElementById("contactWebsite")?.value;
     if (trap) {
       form.reset();
+      setEmailError("");
       showNotice(feedback, "Thank you. Your inquiry has been received.", "ok");
       return;
     }
 
     const sender_name = document.getElementById("contactName").value.trim();
-    const sender_email = document.getElementById("contactEmail").value.trim();
+    const sender_email = (emailInput?.value || "").trim();
     const subject = document.getElementById("contactSubject").value.trim();
     const message = document.getElementById("contactMessage").value.trim();
 
     if (!sender_name || !sender_email || !message) {
+      if (!sender_email) {
+        setEmailError("Email address is required.");
+        if (sender_name) emailInput?.focus();
+      }
       showNotice(feedback, "Please enter your name, email address, and message.", "err");
       return;
     }
 
-    if (
-      sender_email.length < 3 ||
-      sender_email.length > 180 ||
-      !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(sender_email)
-    ) {
-      showNotice(feedback, "Please enter a valid email address (e.g. name@example.com).", "err");
+    if (!isValidEmail(sender_email)) {
+      const msg = "Please enter a valid email address (e.g. name@example.com).";
+      setEmailError(msg);
+      showNotice(feedback, msg, "err");
+      emailInput?.focus();
       return;
     }
 
@@ -804,6 +848,7 @@ function initContactForm() {
         );
       }
       form.reset();
+      setEmailError("");
     } catch (err) {
       showNotice(feedback, `Could not submit inquiry: ${err.message}`, "err");
     } finally {

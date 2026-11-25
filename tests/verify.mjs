@@ -180,4 +180,9 @@ assert.ok(
   "Mobile project rows must reflow rather than hide chips and year",
 );
 
+// 10. Verify inquiry form email validation markup, styling, and JS helper
+assert.ok(html.includes('id="contactEmailError"'), "Contact form must include #contactEmailError");
+assert.ok(css.includes(".field-error") && css.includes('aria-invalid="true"'), "CSS must style .field-error and aria-invalid");
+assert.ok(appJs.includes("function isValidEmail"), "app.js must define isValidEmail");
+
 console.log("ALL PORTFOLIO & CMS CHECKS PASSED");
