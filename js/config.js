@@ -63,9 +63,28 @@ export function isSupabaseConfigured(cfg = getRuntimeConfig()) {
   return Boolean(cfg.supabaseUrl && cfg.supabaseAnonKey && /^https:\/\//.test(cfg.supabaseUrl));
 }
 
+function sanitizeLocalRelativePath(trimmed) {
+  if (
+    !trimmed.startsWith("./") ||
+    trimmed.includes("..") ||
+    trimmed.includes("\\") ||
+    !/^\.\/[a-zA-Z0-9._\-\/ %]+$/.test(trimmed)
+  ) {
+    return "";
+  }
+  try {
+    return encodeURI(decodeURI(trimmed));
+  } catch {
+    return encodeURI(trimmed);
+  }
+}
+
 export function sanitizeUrl(raw) {
   if (!raw || typeof raw !== "string") return "";
   const trimmed = raw.trim();
+  if (trimmed.startsWith("./")) {
+    return sanitizeLocalRelativePath(trimmed);
+  }
   try {
     const parsed = new URL(trimmed);
     if (parsed.protocol === "https:" || parsed.protocol === "http:") {
@@ -85,6 +104,10 @@ export function buildImageKitUrl(rawInput, { width = 960, quality = 80 } = {}) {
   const cfg = getRuntimeConfig();
   const trimmed = String(rawInput || "").trim();
   if (!trimmed) return "";
+
+  if (trimmed.startsWith("./")) {
+    return sanitizeLocalRelativePath(trimmed);
+  }
 
   let resolved = trimmed;
   if (!/^https?:\/\//i.test(trimmed)) {

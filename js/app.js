@@ -16,8 +16,8 @@ import {
 } from "./seed-data.js";
 
 const SESSION_KEY = "arambuuu_supabase_session_v1";
-const LOCAL_PROJ_KEY = "arambuuu_local_projects_v1";
-const LOCAL_GAL_KEY = "arambuuu_local_gallery_v1";
+const LOCAL_PROJ_KEY = "arambuuu_local_projects_v2";
+const LOCAL_GAL_KEY = "arambuuu_local_gallery_v2";
 const LOCAL_MSG_KEY = "arambuuu_local_messages_v1";
 const THEME_KEY = "arambuuu_theme_v1";
 
@@ -341,14 +341,23 @@ function renderHomeSpecimen() {
   };
 
   clearNode(tabs);
-  pool.slice(0, 4).forEach((proj, idx) => {
+  const visibleTabs = pool.slice(0, 4);
+  const categoryCounts = visibleTabs.reduce((acc, proj) => {
+    acc[proj.category] = (acc[proj.category] || 0) + 1;
+    return acc;
+  }, {});
+  visibleTabs.forEach((proj, idx) => {
+    const tabLabel =
+      categoryCounts[proj.category] > 1
+        ? proj.title.split("—")[0].split("(")[0].trim()
+        : proj.category;
     tabs.appendChild(
       el("button", {
         type: "button",
         role: "tab",
         "aria-selected": String(idx === state.featuredIndex),
         class: `specimen-tab${idx === state.featuredIndex ? " is-active" : ""}`,
-        text: proj.category,
+        text: tabLabel,
         onClick: () => {
           state.featuredIndex = idx;
           renderHomeSpecimen();
@@ -501,7 +510,7 @@ function renderAbout() {
 
 function renderProjectsPage() {
   const filterWrap = document.getElementById("projectCategoryFilters");
-  const categories = ["All", "Web Dev", "UI/UX", "Branding", "Motion & Video", "Digital Marketing"];
+  const categories = ["All", "Web Dev", "UI/UX", "Branding", "Print & Poster", "Motion & Video", "Digital Marketing"];
   clearNode(filterWrap);
   categories.forEach((cat) => {
     filterWrap.appendChild(
@@ -622,6 +631,9 @@ function openProjectDialog(project) {
   const safeHref = sanitizeUrl(project.live_url);
   if (safeHref) {
     link.href = safeHref;
+    link.textContent = safeHref.toLowerCase().endsWith(".pdf")
+      ? "View Brand Guide (PDF)"
+      : "Visit Live Website";
     link.hidden = false;
   } else {
     link.hidden = true;

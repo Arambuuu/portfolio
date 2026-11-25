@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { buildImageKitUrl, sanitizeUrl } from "../js/config.js";
+import { SEED_PROJECTS, SEED_GALLERY } from "../js/seed-data.js";
 import handler from "../api/imagekit-auth.js";
 
 const root = process.cwd();
@@ -109,5 +110,58 @@ assert.equal(isUuid("local-7d62679c-0e68-4609-96b0-f8d3fc7fa764"), false);
 assert.equal(isUuid("seed-proj-1"), false);
 assert.equal(isUuid(""), false);
 assert.equal(isUuid(null), false);
+
+// 8. Verify repo-local relative asset resolution, removal of dummy projects, and real project files on disk
+const cadacRelPath = "./projects/poster/CADAC/College - DNSC - Piloto.jpg";
+const encodedCadac = buildImageKitUrl(cadacRelPath);
+assert.equal(encodedCadac, "./projects/poster/CADAC/College%20-%20DNSC%20-%20Piloto.jpg");
+assert.equal(buildImageKitUrl(encodedCadac), encodedCadac);
+assert.equal(buildImageKitUrl("./../secret.jpg"), "");
+assert.equal(buildImageKitUrl("./projects\\bad.jpg"), "");
+
+const kantigoPdf = "./projects/branding/KantiGo Solutions Corp - Branding Kit/Kantigo Branding Kit and Guide v1.pdf";
+assert.equal(
+  sanitizeUrl(kantigoPdf),
+  "./projects/branding/KantiGo%20Solutions%20Corp%20-%20Branding%20Kit/Kantigo%20Branding%20Kit%20and%20Guide%20v1.pdf",
+);
+assert.equal(sanitizeUrl("./../secret.pdf"), "");
+assert.equal(sanitizeUrl("./projects\\bad.pdf"), "");
+
+const expectedProjectSlugs = [
+  "bridge-digital-transformations",
+  "garinan-oil-terminal-website",
+  "kantigo-sports-branding-kit",
+  "cadac-panabo-anti-drug-poster",
+];
+assert.deepEqual(
+  SEED_PROJECTS.map((p) => p.slug),
+  expectedProjectSlugs,
+);
+for (const dummySlug of [
+  "responsive-web-applications",
+  "branding-identity-systems",
+  "ui-ux-prototypes-layouts",
+  "promotional-video-motion",
+  "digital-marketing-assets",
+]) {
+  assert.ok(!SEED_PROJECTS.some((p) => p.slug === dummySlug), `Dummy project ${dummySlug} must be removed`);
+}
+
+for (const item of [...SEED_PROJECTS, ...SEED_GALLERY]) {
+  const resolvedImg = buildImageKitUrl(item.image_url);
+  assert.ok(resolvedImg, `Invalid image_url for ${item.id}`);
+  if (item.image_url.startsWith("./")) {
+    const diskPath = path.join(root, item.image_url.slice(2));
+    assert.ok(fs.existsSync(diskPath) && fs.statSync(diskPath).size > 0, `Missing asset on disk: ${diskPath}`);
+  }
+  if (item.live_url) {
+    const resolvedLive = sanitizeUrl(item.live_url);
+    assert.ok(resolvedLive, `Invalid live_url for ${item.id}`);
+    if (item.live_url.startsWith("./")) {
+      const diskLive = path.join(root, item.live_url.slice(2));
+      assert.ok(fs.existsSync(diskLive) && fs.statSync(diskLive).size > 0, `Missing live_url file on disk: ${diskLive}`);
+    }
+  }
+}
 
 console.log("ALL PORTFOLIO & CMS CHECKS PASSED");
