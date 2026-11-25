@@ -139,7 +139,8 @@ async function supabaseRequest(path, { method = "GET", body, auth = false, prefe
   };
   if (auth && state.session?.access_token) {
     headers.Authorization = `Bearer ${state.session.access_token}`;
-  } else {
+  } else if (cfg.supabaseAnonKey.split(".").length === 3) {
+    // Legacy JWT anon keys accept Bearer auth; sb_publishable_ keys must only be sent in apikey.
     headers.Authorization = `Bearer ${cfg.supabaseAnonKey}`;
   }
   if (prefer) headers.Prefer = prefer;
