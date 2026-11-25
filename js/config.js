@@ -11,8 +11,8 @@ const CONFIG_STORAGE_KEY = "arambuuu_cms_config_v1";
 
 export const DEFAULT_CONFIG = {
   // Replace with your Supabase Project URL and Anon Key, or set them via #admin -> Setup
-  supabaseUrl: "",
-  supabaseAnonKey: "",
+  supabaseUrl: "https://uqmbytfigyvzkbfjhnmo.supabase.co",
+  supabaseAnonKey: "sb_publishable_gxnxY63_rYjxLOfodgeszg_dHBIhhOa",
   imagekitEndpoint: "https://ik.imagekit.io/arambuuu",
   imagekitUploadFolder: "/Arambuuu/cms",
 };
