@@ -761,6 +761,15 @@ function initContactForm() {
       return;
     }
 
+    if (
+      sender_email.length < 3 ||
+      sender_email.length > 180 ||
+      !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(sender_email)
+    ) {
+      showNotice(feedback, "Please enter a valid email address (e.g. name@example.com).", "err");
+      return;
+    }
+
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
 
