@@ -291,9 +291,23 @@ function initRouter() {
 
   const toggle = document.getElementById("menuToggleBtn");
   const nav = document.getElementById("primaryNav");
+  const closeMenu = (restoreFocus = false) => {
+    if (!nav?.classList.contains("is-open")) return;
+    nav.classList.remove("is-open");
+    toggle?.setAttribute("aria-expanded", "false");
+    if (restoreFocus) toggle?.focus();
+  };
   toggle?.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+  document.addEventListener("click", (e) => {
+    if (nav?.classList.contains("is-open") && !nav.contains(e.target) && !toggle?.contains(e.target)) {
+      closeMenu();
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu(true);
   });
 }
 
@@ -607,9 +621,9 @@ function renderToolsPage() {
     tbody.appendChild(
       el("tr", {}, [
         el("td", { class: "tool-name-cell", text: tool.name }),
-        el("td", {}, el("span", { class: "chip", text: tool.discipline })),
-        el("td", { text: tool.usage }),
-        el("td", { class: "mono-meta", text: tool.pairing }),
+        el("td", { "data-label": "Discipline" }, el("span", { class: "chip", text: tool.discipline })),
+        el("td", { "data-label": "Primary Use Case", text: tool.usage }),
+        el("td", { "data-label": "Typical Pairing", class: "mono-meta", text: tool.pairing }),
       ]),
     );
   });
@@ -693,6 +707,29 @@ function initDialogs() {
     if (e.key === "ArrowLeft") openGalleryDialog(state.lightboxIndex - 1);
     if (e.key === "ArrowRight") openGalleryDialog(state.lightboxIndex + 1);
   });
+  let touchStartX = 0;
+  let touchStartY = 0;
+  gDlg.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length !== 1) return;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    },
+    { passive: true },
+  );
+  gDlg.addEventListener(
+    "touchend",
+    (e) => {
+      if (e.changedTouches.length !== 1) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        openGalleryDialog(state.lightboxIndex + (dx < 0 ? 1 : -1));
+      }
+    },
+    { passive: true },
+  );
 }
 
 // ---------- Contact Form ----------
@@ -970,7 +1007,7 @@ function renderCmsLists() {
     state.messages.forEach((m) => {
       mList.appendChild(
         el("div", { class: "cms-item", style: "align-items: flex-start" }, [
-          el("div", { style: "display: grid; gap: 4px" }, [
+          el("div", { style: "display: grid; gap: 4px; min-width: 0" }, [
             el("div", { class: "cms-item-title", text: `${m.sender_name} (${m.sender_email})` }),
             el("div", {
               class: "mono-meta",
