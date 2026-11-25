@@ -7,7 +7,7 @@ export const OWNER_PROFILE = {
   phone: "+63 991 721 9541",
   availability: "Available for projects",
   logoUrl: "https://ik.imagekit.io/arambuuu/Arambuuu/Arambuuu.png",
-  portraitUrl: "https://ik.imagekit.io/arambuuu/Arambuuu/profile.png",
+  portraitUrl: "./assets/profile.jpg",
   socials: [
     { label: "LinkedIn", url: "https://linkedin.com/in/arambuuu" },
     { label: "GitHub", url: "https://github.com/Arambuuu" },

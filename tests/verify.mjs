@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { buildImageKitUrl, sanitizeUrl } from "../js/config.js";
-import { SEED_PROJECTS, SEED_GALLERY } from "../js/seed-data.js";
+import { OWNER_PROFILE, SEED_PROJECTS, SEED_GALLERY } from "../js/seed-data.js";
 import handler from "../api/imagekit-auth.js";
 
 const root = process.cwd();
@@ -163,5 +163,9 @@ for (const item of [...SEED_PROJECTS, ...SEED_GALLERY]) {
     }
   }
 }
+
+assert.equal(OWNER_PROFILE.portraitUrl, "./assets/profile.jpg");
+assert.equal(buildImageKitUrl(OWNER_PROFILE.portraitUrl), "./assets/profile.jpg");
+assert.ok(fs.statSync(path.join(root, "assets", "profile.jpg")).size > 0);
 
 console.log("ALL PORTFOLIO & CMS CHECKS PASSED");
